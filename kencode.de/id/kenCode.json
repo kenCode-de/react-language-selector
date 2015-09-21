@@ -1,0 +1,83 @@
+{
+    "v": "0.63",
+    "name": {
+        "formatted": "ken Code"
+    },
+    "email": "",
+    "vcard": "http://kenCode.de/id/kenCode.vcf",
+    "website": "http://kenCode.de", 
+    "weblog": "http://google.com/+kenCode",
+
+    "_comment": "bio is used by onename.io and description is used by the namecoin id/ schema",
+    "bio": "White Hat & White Collar Inventor, driven COO, Decentralizer, Tech Investor, Efficiency Expert & IoT aficionado.", 
+    "description": "White Hat & White Collar Inventor, driven COO, Decentralizer, Tech Investor, Efficiency Expert & IoT aficionado.", 
+
+    "hobby": ["Papa","permaculture","high tech","sailing","skydiving","hiking","bicycling"],
+    "locality": "Munich",
+    "country": "DE",
+    "location": {
+        "formatted": "M\u00fcnchen,  Deutschland"
+    }, 
+    "birthday": "1970/07/04",
+    "gender": "male",
+    "graph": {
+        "_comment": "followees, friends, etc. third-party sites can graph their own info about you in their own json file",
+        "url": "https://s3.amazonaws.com/grph/kencode"
+    }, 
+    "twitter": {
+        "username": "kenCode_de", 
+        "proof": {
+            "url": "https://twitter.com/kenCode_de/status/526094865646370817"
+        }
+    }, 
+    "facebook": {
+        "username": "people/Ken-Code/100004823388497", 
+        "proof": {
+            "url": "https://facebook.com/people/Ken-Code/100004823388497/posts/171833352987443"
+        }
+    }, 
+    "github": {
+        "username": "kenCode-de", 
+        "proof": {
+        "url": "https://gist.github.com/kenCode-de/e2ca77fad967c08387e2"
+        }
+    },
+    "pgp": {
+        "url": "http://kencode.de/keys/kenCode.asc",
+        "fingerprint": "1A0499F885706D41559650D832FBB0E291EA53A1"
+    }, 
+    "gpg": {
+        "v": "pka1",
+        "fpr": "1A0499F885706D41559650D832FBB0E291EA53A1",
+        "uri": "http://kencode.de/keys/kenCode.asc"
+    },
+    "otr": "1A0499F885706D41559650D832FBB0E291EA53A1",
+    "signer": "1A0499F885706D41559650D832FBB0E291EA53A1",
+    "bitcoin": {
+        "default": "1E1hfm6zPHQm7pnkYTdH2jp28SnhdD9MQA",
+        "address": "1E1hfm6zPHQm7pnkYTdH2jp28SnhdD9MQA"
+    }, 
+    "litecoin": {
+        "default": "LbKArN6N7RYVwKPpdaCYgnJ4QeZHVDBwSg",
+        "address": "LbKArN6N7RYVwKPpdaCYgnJ4QeZHVDBwSg"
+    }, 
+    "namecoin": {
+        "_comment": "the default and name attribs i just added here cuz their docs do not declare their location",
+        "default": "0",
+        "address": "0",
+        "name": "id/0"
+    }, 
+    "bitmessage": "BM-nn",
+    "xmpp": "xmpp@kenCode.de",
+    "photo_url": "http://kenCode.de/img/ken-code-gravatar.jpg",
+    "avatar": {
+        "_comment": "the avatar attrib sets a mugshot image, like a gravatar",
+        "url": "http://kenCode.de/img/ken-code-gravatar.jpg"
+    },
+    "cover": {
+        "_comment": "the cover attrib sets a background image",
+        "url": "http://kenCode.de/img/bg-embedded-systems-javascript-development.jpg"
+    }, 
+    "_comment": "dnschain.net uses this next attrib for some bizarre reason",
+    "next": "i/kencode-1"
+} 

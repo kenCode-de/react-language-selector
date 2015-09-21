@@ -1,0 +1,234 @@
+html { 
+  background: #333333 url(../img/bg-embedded-systems-javascript-development.jpg); 
+  background-size: cover;
+  background-attachment: fixed;
+}
+body {
+	font-family: Ubuntu, Arial;
+	color: #F0F0F0;
+}
+a {
+	text-decoration: none;
+	color: #F0F0F0;
+}
+a:hover {
+	color: yellow;
+}
+table {
+  border: 0px solid black;
+  width: 70%; 
+  margin-left: 15%; 
+  margin-right: 15%;
+  border-spacing: 4px;
+  border-collapse: separate;
+}
+td.menu {
+  font-size: 1.2em;
+  float: right;
+}
+span.inactiveMenuLink {
+  color: #CCCC00;
+}
+img.menuIcons {
+  opacity: 0.5;
+  vertical-align: top;
+  margin-left: 4px;
+}
+img.menuIcons:hover {
+  opacity: 1.0;
+}
+
+/* CSS for the main core of the page */
+div.coreOfIndexPage {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+}
+div.coreOfIndexPage-quote {
+  text-align: center;
+  font-size: 2.3em;
+  text-shadow: 4px 4px 4px #99995C;
+  letter-spacing: 2px;
+}
+div.coreOfIndexPage-competencies {
+  text-align: center;
+  font-size: 1.5em;
+}
+div.coreOfIndexPage, div.coreOfOtherPages {
+  border: 0px solid black;
+  width: 68%; 
+  margin-left: 16%; 
+  margin-right: 16%;
+  border-spacing: 18px;
+  border-collapse: separate;
+}
+div.coreOfOtherPages {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+div.coreOfOtherPages  a {
+  border-bottom: 1px dotted white;
+}
+div.coreOfOtherPages  a:hover {
+  border-bottom: none;
+}
+
+/* CSS for the footer */
+td.bgGradient {
+  line-height: 0.2;
+  background: -webkit-linear-gradient(left, rgba(33,33,33,0.8), rgba(33,33,33,0));
+  background: -o-linear-gradient(right, rgba(33,33,33,0.8), rgba(33,33,33,0));
+  background: -moz-linear-gradient(right, rgba(33,33,33,0.8), rgba(33,33,33,0));
+  background: linear-gradient(to right, rgba(33,33,33,0.8), rgba(33,33,33,0));
+}
+img.roundedGravatar {
+  width: 110px;
+  height: 110px;
+  -webkit-border-radius: 55px;
+     -moz-border-radius: 55px;
+          border-radius: 55px;  
+  -webkit-animation: anime 4s infinite;
+     -moz-animation: anime 4s infinite;
+      -ms-animation: anime 4s infinite;
+       -o-animation: anime 4s infinite;
+          animation: anime 4s infinite;
+}
+img.roundedGravatar:hover {
+  -webkit-transform: rotate(7deg) scale(1.05);
+     -moz-transform: rotate(7deg) scale(1.05);
+      -ms-transform: rotate(7deg) scale(1.05);
+       -o-transform: rotate(7deg) scale(1.05);
+          transform: rotate(7deg) scale(1.05);
+  -webkit-box-shadow: 3px 3px 6px #000000;
+     -moz-box-shadow: 3px 3px 6px #000000;
+          box-shadow: 3px 3px 6px #000000;
+}
+@XXX-webkit-keyframes anime {
+  50% {
+  -webkit-transform: rotate(5deg) scale(1.05);
+     -moz-transform: rotate(5deg) scale(1.05);
+      -ms-transform: rotate(5deg) scale(1.05);
+       -o-transform: rotate(5deg) scale(1.05);
+          transform: rotate(5deg) scale(1.05);
+  -webkit-box-shadow: 3px 3px 6px #000000;
+     -moz-box-shadow: 3px 3px 6px #000000;
+          box-shadow: 3px 3px 6px #000000;
+  }
+}
+@XXXkeyframes anime {
+  50% {
+  -webkit-transform: rotate(5deg) scale(1.05);
+     -moz-transform: rotate(5deg) scale(1.05);
+      -ms-transform: rotate(5deg) scale(1.05);
+       -o-transform: rotate(5deg) scale(1.05);
+          transform: rotate(5deg) scale(1.05);
+  -webkit-box-shadow: 3px 3px 6px #000000;
+     -moz-box-shadow: 3px 3px 6px #000000;
+          box-shadow: 3px 3px 6px #000000;
+  }
+}
+td.footer {
+  width: 100%;
+  font-size: 0.9em;
+  line-height: 1.8;
+  padding-left: 20px;
+}
+img.icons {
+  opacity: 0.6;
+  vertical-align: middle;
+  margin: 5px;
+	border-radius: 3px 3px 3px 3px;
+}
+img.icons:hover {
+  opacity: 1.0;
+  -webkit-transform: rotate(1deg) scale(1.70);
+     -moz-transform: rotate(1deg) scale(1.70);
+      -ms-transform: rotate(1deg) scale(1.70);
+       -o-transform: rotate(1deg) scale(1.70);
+          transform: rotate(1deg) scale(1.70);
+}
+div.icons {
+  line-height: 0;
+  float: right;
+}
+div.moveFooterToBottom {
+  position: absolute;
+  bottom: 0px;
+}
+.license {
+  font-size: 0.8em;
+  margin: 4px;
+  color: #333333;
+}
+.license a {
+  font-size: 0.8em;
+  margin: 4px;
+  color: #333333;
+}
+.license a:hover {
+  font-size: 0.8em;
+  margin: 4px;
+  color: #333333;
+}
+
+/* CSS for the /about page */ 
+p, blockquote {
+    line-height:1.5;
+}
+p:first-line {
+    font-weight:bold;
+    font-size:1.2em;
+    color:#CCCC00;
+}
+details summary {
+    font-weight:bold;
+    font-size: 1.2em;
+    outline: none;
+}
+details summary:hover {
+    color: yellow;
+    cursor: pointer;
+}
+details[open] summary {
+    color: #CCCC00;
+}
+details summary::-webkit-details-marker {
+    display: none;
+}
+details summary:before {
+    background-image: url(../img/icon-details-plus.png);
+}
+details[open] summary:before {
+    background-image: url(../img/icon-details-minus.png);
+}
+details summary:before, details[open] summary:before {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+div.imgCaptions {
+    float: right;
+    width:115px;
+    margin:10px;
+    text-align:center;
+}
+div.imgCaptions:hover {
+    background: rgb(33, 33, 33);
+    background: rgba(33, 33, 33, 0.3);
+    border-radius: 0px 30px 0px 0px;
+}
+img.imgCaptions {
+    width:100px;
+    height:100px;
+    margin:5px;
+    border-radius: 0px 25px 0px 25px;
+    opacity: 0.6;
+}
+img.imgCaptions:hover {
+    opacity: 1;
+}

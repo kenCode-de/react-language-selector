@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:ken Code
+N:Code;ken;;;
+EMAIL;TYPE=INTERNET;TYPE=WORK:ken@kenCode.de
+ADR:;;;München;;81245;Deutschland
+URL;TYPE=WORK:http\://kenCode.de
+item1.URL:http\://google.com/+kenCode
+item1.X-ABLabel:BLOG
+NOTE:JSON\: http\://kenCode.de/id/kenCode.json
+END:VCARD
