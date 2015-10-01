@@ -2,62 +2,91 @@ var Lang = (function () {
 
 	var Lang = function (defaultLangfile, defaultLang) {
 		var self = this;
-		self.loadJSON(function (response) {
 
-			self.pack = JSON.parse(response);
-		}, defaultLangfile)
-
-		document.onreadystatechange = function () {
-			var state = document.readyState
-				if (state == 'interactive') {
-
-					
-				} else if (state == 'complete') {
-					self.setmyLang(defaultLang);
-				}
+		if (typeof(Storage) !== "undefined") {
+			self.set_load_lang(self.getsetting('lang', defaultLang), self.getsetting('langfile', defaultLangfile), true);
+			//localStorage.setItem('langfile', self.getsetting('langfile', defaultLangfile));
+		} else {
+			self.set_load_lang(defaultLang, defaultLangfile, true);
 		}
+
+		//window.onload = function () {
+		//if (typeof(Storage) !== "undefined") {
+		//	self.setmyLang(self.getsetting('lang', defaultLang));
+		//} else {
+		//	self.setmyLang(defaultLang);
+		//}
+		//};
 	};
 
+	//Lang.prototype.addedpacks = {};
 	Lang.prototype.pack = {};
-	Lang.prototype.loadLangPack = function (myLangFile) {
+	Lang.prototype.loadLangPack = function (callback, myLangFile, isfirst) {
 		var self = this;
-
+		//TODO: check if the json object is added before.
 		self.loadJSON(function (response) {
 			var result = JSON.parse(response);
-			for (var i = 0; i < result.length; i++) {
-				self.pack.push(result[i]);
-
-				var jsonStr = JSON.stringify(self.pack);
-
+			if (isfirst == true) {
+				self.pack = result;
+			} else {
+				for (var i = 0; i < result.length; i++) {
+					self.pack.push(result[i]);
+					//var jsonStr = JSON.stringify(self.pack);
+				}
 			}
-		}, myLangFile)
+			localStorage.setItem('langfile', myLangFile);
+			callback();
+		}, myLangFile);
 	};
 
-	Lang.prototype.setmyLang = function (myLang) {
+	Lang.prototype.set_lang = function (myLang) {
 		var self = this;
+
 		for (var i = 0; i < self.pack.length; i++) {
 			if (self.pack[i].lang == myLang) {
-
 				var child1 = React.createElement('lable', null, self.pack[i].text);
-				React.render(child1, document.getElementById(self.pack[i].elem));
+				React.render(child1, document.evaluate(self.pack[i].elem, document, null, 9, null).singleNodeValue);
 			}
-
 		}
+		localStorage.setItem('lang', myLang);
+	};
 
+	Lang.prototype.set_load_lang = function (myLang, myLangFile, isfirst) {
+		var self = this;
+
+		self.loadLangPack(function () {
+			if (isfirst == true) {
+				document.onreadystatechange = function () {
+					var state = document.readyState
+						if (state == 'complete') {
+							self.set_lang(myLang);
+						}
+				}
+			} else {
+				self.set_lang(myLang);
+			}
+		}, myLangFile, isfirst);
+
+	};
+
+	Lang.prototype.getsetting = function (setKey, defaultval) {
+		return localStorage[setKey] || defaultval;
 	};
 
 	Lang.prototype.loadJSON = function (callback, myfile) {
+		var xmlhttp = new XMLHttpRequest();
 
-		var xobj = new XMLHttpRequest();
-		xobj.overrideMimeType("application/json");
-		xobj.open('GET', myfile, true); // Replace 'my_data' with the path to your file
-		xobj.onreadystatechange = function () {
-			if (xobj.readyState == 4 && xobj.status == "200") {
-				// Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-				callback(xobj.responseText);
+		xmlhttp.onreadystatechange = function () {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				callback(xmlhttp.responseText);
 			}
 		};
-		xobj.send(null);
+		xmlhttp.open('GET', myfile, true);
+		xmlhttp.overrideMimeType("application/json");
+		xmlhttp.setRequestHeader('Content-Type', 'application/json');
+		xmlhttp.setRequestHeader('Accept-Encoding', 'gzip');
+
+		xmlhttp.send(null);
 	};
 	return Lang;
 })();

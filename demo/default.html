@@ -13,15 +13,17 @@
 	
 	var lang = new Lang('langpack/de.json', 'de');
 
-	lang.loadLangPack('langpack/en.json');
+	 //lang.loadLangPack('langpack/en.json');
 
-	en = function () {
-		lang.setmyLang('en');
-	};
+	//en = function () {
+		//lang.set_lang('en');
+		 //lang.set_load_lang('en','langpack/en.json');
+	//};
 
-	de = function () {
-		lang.setmyLang('de');
-	};
+	//de = function () {
+		 //lang.set_lang('de');
+		 //window.lang.set_load_lang('de','langpack/de.json');
+	//};
 	</script>
 </head>
 <body>
@@ -30,9 +32,9 @@
 	    <td class="menu" nowrap>
             <a href="http://kencode.de/projects" id="trans1">projects</a>&nbsp;&nbsp;&#183;&nbsp;&nbsp;
             <a href="http://kencode.de/contact" id="trans2">contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a onclick="en();" title='Set the language to English'>
+            <a onclick="window.lang.set_load_lang('en','langpack/en.json');" title='Set the language to English'>
             <img src='img/flags/United-States.png' width=22 height=22></a>
-            <a onclick="de();" title='Zeigen Sie die Seite in Deutsch'>
+            <a onclick="window.lang.set_load_lang('de','langpack/de.json');" title='Zeigen Sie die Seite in Deutsch'>
             <img src='img/flags/Germany.png' width=22 height=22></a>&nbsp;
 	</td>
 	</tr>
