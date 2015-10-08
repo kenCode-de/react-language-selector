@@ -1,5 +1,5 @@
 [
-{"lang":"de","elem":"//a[@id=\"trans1\"]","text":"projekte"},
-{"lang":"de","elem":"//a[@id=\"trans2\"]","text":"kontakt"},
-{"lang":"de","elem":"//div[@id=\"trans3\"]","text":"Schnelle Firmen ♥ Dezentralisierung"}
+{"lang":"de","elem":"//*[@id='trans']","text":"projekte"},
+{"lang":"de","elem":"//*[@id='trans']","text":"kontakt"},
+{"lang":"de","elem":"//*[@id='trans']","text":"Schnelle Firmen ♥ Dezentralisierung"}
 ]

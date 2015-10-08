@@ -1,5 +1,5 @@
 [
-{"lang":"en","elem":"//a[@id=\"trans1\"]","text":"projects"},
-{"lang":"en","elem":"//a[@id=\"trans2\"]","text":"contact"},
-{"lang":"en","elem":"//div[@id=\"trans3\"]","text":"Fast Companies ♥ Decentralization"}
+{"lang":"en","elem":"//*[@id='trans']","text":"projects"},
+{"lang":"en","elem":"//*[@id='trans']","text":"contact"},
+{"lang":"en","elem":"//*[@id='trans']","text":"Fast Companies ♥ Decentralization"}
 ]
