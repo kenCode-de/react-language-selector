@@ -64,7 +64,8 @@ Lang = (function () {
 						for (var x = 0; x < num; x++) {
 							thisNode = noderesult.iterateNext();
 						}
-					} else {}
+					} else {
+					}
 
 					var child1 = React.createElement('lable', null, self.pack[i].text);
 
