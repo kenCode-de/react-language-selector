@@ -1,9 +1,9 @@
-var Lang;
-Lang = (function () {
+React.LS = (function () {
 
 	var Lang = function (defaultLangfile, defaultLang) {
 		var self = this;
-
+		self.dLang = defaultLang;
+		self.dLangFile = defaultLangfile;
 		if (typeof(Storage) !== "undefined") {
 			self.set_load_lang(self.getsetting('lang', defaultLang), self.getsetting('langfile', defaultLangfile), true);
 		} else {
@@ -19,13 +19,24 @@ Lang = (function () {
 			}
 		}
 		return false;
-	}
+	};
 
+	Lang.prototype.dLangFile = '';
+	Lang.prototype.dLang = '';
 	Lang.prototype.pack = {};
 	Lang.prototype.loadedfiles = [];
 
+	Lang.prototype.ready = function (fn) {
+		if (document.readyState != 'loading') {
+			fn();
+		} else {
+			document.addEventListener('DOMContentLoaded', fn);
+		}
+	};
+
 	Lang.prototype.loadLangPack = function (callback, myLangFile, isfirst) {
 		var self = this;
+
 		if (!self.loadedfiles.contains(myLangFile)) {
 			self.loadJSON(function (response) {
 				var result = JSON.parse(response);
@@ -46,16 +57,17 @@ Lang = (function () {
 	};
 
 	Lang.prototype.set_lang = function (myLang) {
+
 		var self = this;
 		var num = 0;
 		var oldelem;
+
 		for (var i = 0; i < self.pack.length; i++) {
 			if (self.pack[i].lang == myLang) {
 
-				noderesult = document.evaluate(self.pack[i].elem, document, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
+				var noderesult = document.evaluate(self.pack[i].elem, document, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
 
 				var thisNode = noderesult.iterateNext();
-
 				if (i != 0) {
 					if (self.pack[i].elem == oldelem) {
 						num++;
@@ -67,14 +79,24 @@ Lang = (function () {
 					} else {
 					}
 
-					var child1 = React.createElement('lable', null, self.pack[i].text);
+					/*
+					 var child1 = React.SHP.createElement(thisNode.outerHTML, self.pack[i].text, null);
+					 React.render(child1, thisNode.parentNode);
+					 */
 
-					React.render(child1, thisNode);
+					React.SHP.render(thisNode.outerHTML, self.pack[i].text, self.pack[i].attr, true ,thisNode.parentNode);
+
 				} else {
-					var child1 = React.createElement('lable', null, self.pack[i].text);
 
-					React.render(child1, thisNode);
+					/*
+					 var child1 = React.SHP.createElement(thisNode.outerHTML, self.pack[i].text, null);
+					 React.render(child1, thisNode.parentNode);
+					 */
+
+					React.SHP.render(thisNode.outerHTML, self.pack[i].text, self.pack[i].attr, true ,thisNode.parentNode);
+
 				}
+
 				oldelem = self.pack[i].elem;
 			}
 		}
@@ -87,11 +109,9 @@ Lang = (function () {
 
 		self.loadLangPack(function () {
 			if (isfirst == true) {
-				var state = document.readyState;
-
-				if (state == 'complete') {
+				self.ready(function () {
 					self.set_lang(myLang);
-				}
+				})
 			} else {
 				self.set_lang(myLang);
 			}
@@ -114,12 +134,21 @@ Lang = (function () {
 				callback(xmlhttp.responseText);
 			}
 		};
-		xmlhttp.open('GET', myfile, true);
-		xmlhttp.overrideMimeType("application/json");
-		xmlhttp.setRequestHeader('Content-Type', 'application/json');
-		xmlhttp.setRequestHeader('Accept-Encoding', 'gzip');
 
-		xmlhttp.send(null);
+
+		try {
+			xmlhttp.open('GET', myfile, true);
+			xmlhttp.overrideMimeType("application/json");
+			xmlhttp.setRequestHeader('Content-Type', 'application/json');
+			xmlhttp.setRequestHeader('Accept-Encoding', 'gzip');
+			xmlhttp.send(null);
+
+		}
+		catch (e) {
+			alert(e);
+			self.set_load_lang(self.dLang, self.dLangFile, false);
+		}
+
 	};
 	return Lang;
 })();
