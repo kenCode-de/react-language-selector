@@ -19,6 +19,7 @@
 
 .react-language-selector-ui a {
 	transition: all 0.2s ease-in-out;
+	cursor:pointer;
 }
 
 .react-language-selector-ui img {

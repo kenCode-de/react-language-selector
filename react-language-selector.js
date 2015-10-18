@@ -323,7 +323,6 @@ React.LS = (function () {
 					if (showFlagsProp) {
 						liElements.push(React.createElement("li", null,
 							React.createElement("a", {
-									href: "#",
 									className: selectedItemClass,
 									title: item.title,
 									onClick: _this._onLanguageSelected.bind(_this, item)
@@ -333,7 +332,6 @@ React.LS = (function () {
 					} else {
 						liElements.push(React.createElement("li", null,
 							React.createElement("a", {
-								href: "#",
 								className: selectedItemClass,
 								title: item.title,
 								onClick: _this._onLanguageSelected.bind(_this, item)
@@ -366,14 +364,12 @@ React.LS = (function () {
 				if (openMode === 'hover') {
 					return React.createElement("a", {
 						className: "rlsui-selected-locale",
-						href: "#",
 						onMouseEnter: _this._onHover.bind(_this, true),
 						onMouseLeave: _this._onHover.bind(_this, false)
 					}, flagEl, " ", selectedLang.name);
 				} else {
 					return React.createElement("a", {
 						className: "rlsui-selected-locale",
-						href: "#",
 						onClick: _this._onClick
 					}, flagEl, " ", selectedLang.name);
 				}
