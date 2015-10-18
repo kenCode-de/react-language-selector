@@ -5,64 +5,68 @@
     <title>Demo</title>
     <link href="css/react-language-selector-ui.css" rel="stylesheet">
 
-    <script src="js/react-with-addons-0.13.3.js" type="text/javascript"></script>
+    <script src="js/react-with-addons-0.13.3.js"></script>
     <!-- language specific code -->
-    <script src="js/react-simplehtmlparser.js" type="application/javascript"></script>
-    <script src="react-language-selector.js" type="text/javascript"></script>
+    <script src="js/react-simplehtmlparser.js"></script>
+    <script src="react-language-selector.js"></script>
     <!-- language specific code -->
-
-    <script>
-
-        var lang = new React.LS('languages/de.json', 'de_DE');
-
-        lang.ready(function () {
-            var rlsui_languages = [
-                {
-                    id: 'en_US',
-                    langfile: 'languages/en.json',
-                    title: 'English (US)',
-                    name: ' English (US)',
-                    flagImg: 'img/flags/us.png',
-                    flagTitle: 'United States'
-                },
-                {
-                    id: 'de_DE',
-                    langfile: 'languages/de.json',
-                    title: 'German',
-                    name: ' Deutsch',
-                    flagImg: 'img/flags/de.png',
-                    flagTitle: 'Germany'
-                },
-            ];
-
-            React.render(React.createElement(lang.UI, {
-                items: rlsui_languages,
-                selectedLang: window.lang.getsetting('lang', 'de_DE'),
-                onLanguageChanged: function (rlsui_lang) {
-
-                     lang.set_load_lang(rlsui_lang.id, rlsui_lang.langfile);
-                }
-            }), document.getElementById('rlsui1'));
-        });
-    </script>
 </head>
 <body>
-<div ng-controller="DemoController" style="display: inline"><div id="rlsui1"></div></div>&nbsp;
+<div ng-controller="DemoController" style="display: inline">
+    <div id="rlsui1"></div>
+</div>
+&nbsp;
 <table>
     <tr>
         <td class="menu" nowrap>
-           <div style="display: inline"><a href="http://kencode.de/projects" id="language">projects</a> </div>&nbsp;&nbsp;&#183;&nbsp;&nbsp;
-               <div style="display: inline"> <a href="http://kencode.de/contact" id="language">contact</a></div>
+            <div style="display: inline"><a href="http://kencode.de/projects" id="language">projects</a></div>
+            &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+            <div style="display: inline"><a href="http://kencode.de/contact" id="language">contact</a></div>
             &nbsp;
         </td>
 
     </tr>
 </table>
 <nobr>
-    <div style="display: inline"><div id="language">Fast Companies ♥ Decentralization</div></div>
+    <div style="display: inline">
+        <div id="language">Fast Companies ♥ Decentralization</div>
+    </div>
     <div style="display: inline"><img id="language" src=""></div>
 </nobr>
 <br>
+<script>
 
+    var lang = new React.LS('languages/de.json', 'de_DE');
+
+    lang.ready(function () {
+        var rlsui_languages = [
+            {
+                id: 'en_US',
+                langfile: 'languages/en.json',
+                title: 'English (US)',
+                name: ' English (US)',
+                flagImg: 'img/flags/us.png',
+                flagTitle: 'United States'
+            },
+            {
+                id: 'de_DE',
+                langfile: 'languages/de.json',
+                title: 'German',
+                name: ' Deutsch',
+                flagImg: 'img/flags/de.png',
+                flagTitle: 'Germany'
+            },
+        ];
+
+        React.render(React.createElement(lang.UI, {
+            items: rlsui_languages,
+            selectedLang: window.lang.getsetting('lang', 'de_DE'),
+            onLanguageChanged: function (rlsui_lang) {
+
+                lang.set_load_lang(rlsui_lang.id, rlsui_lang.langfile);
+            }
+        }), document.getElementById('rlsui1'));
+    });
+</script>
 </body>
 </html>
