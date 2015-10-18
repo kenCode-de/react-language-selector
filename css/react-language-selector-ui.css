@@ -1,44 +1,44 @@
 @charset "utf-8";
-.react-language-selector-iu {
+.react-language-selector-ui {
 	font: 14px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif; /* edit or delete so that the switcher inherits the font styles of your project */
 }
 
-.react-language-selector-iu,
-.react-language-selector-iu * {
+.react-language-selector-ui,
+.react-language-selector-ui * {
 	margin: 0;
 	padding: 0;	
 }
 
-.react-language-selector-iu {
+.react-language-selector-ui {
 	position: relative;	
 }
 
-.react-language-selector-iu ul {
+.react-language-selector-ui ul {
 	list-style: none;	
 }
 
-.react-language-selector-iu a {
+.react-language-selector-ui a {
 	transition: all 0.2s ease-in-out;
 }
 
-.react-language-selector-iu img {
+.react-language-selector-ui img {
 	margin-right: 3px;	
 }
 
 /* ---------------------------------------------------------------------- */
 /* Selected Locale (the trigger for the dropdown)
 /* ---------------------------------------------------------------------- */
-.react-language-selector-iu > .rlsui-selected-locale {
+.react-language-selector-ui > .rlsui-selected-locale {
 	text-decoration: none;
 	color: #333; 
 	position: relative; /* for the arrow */
 }
 
-.react-language-selector-iu > .rlsui-selected-locale:hover {
+.react-language-selector-ui > .rlsui-selected-locale:hover {
 	color: #3a91bd;	
 }
 
-.react-language-selector-iu > .rlsui-selected-locale:after { 
+.react-language-selector-ui > .rlsui-selected-locale:after { 
 	content: " "; 
 	position: absolute;
 	top: 50%;

@@ -411,7 +411,7 @@ React.LS = (function () {
 				}
 			};
 
-			return React.createElement("div", {className: "react-language-selector-iu"}, getSelectedLanguage(), " ", getPopup());
+			return React.createElement("div", {className: "react-language-selector-ui"}, getSelectedLanguage(), " ", getPopup());
 		}
 	});
 
