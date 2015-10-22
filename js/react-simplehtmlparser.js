@@ -21,7 +21,6 @@ React.SHP = (function () {
 				thisEleObj[AttrArray[i].name] = AttrArray[i].value;
 			}
 		}
-
 		return thisEleObj;
 	};
 
