@@ -69,9 +69,10 @@
             },*/
         ];
 
-       //Language selector ui
+       //main part for loading language selector ui
         React.render(React.createElement(lang.UI, {
             items: rlsui_languages,
+            //this part got to be same as the default lang you defined at line 38
             selectedLang: window.lang.getsetting('lang', 'de_DE'),
             onLanguageChanged: function (rlsui_lang) {
 
