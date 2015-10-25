@@ -135,17 +135,11 @@ React.LS = (function () {
 			xmlhttp.send(null);
 
 			xmlhttp.onreadystatechange = function () {
-				if (xmlhttp.status == 301 || xmlhttp.status == 302 || xmlhttp.status == 303 || xmlhttp.status == 307 || xmlhttp.status == 308) {
-
-					alert('Redirected');
-				}
-				else {
 					if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 
 						self.loadedfiles.push(myfile);
 						callback(xmlhttp.responseText);
 					}
-				}
 			};
 
 		}

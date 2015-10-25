@@ -35,16 +35,16 @@
 </nobr>
 <br>
 <script>
-
     var lang = new React.LS('languages/de.json', 'de_DE');
 
     lang.ready(function () {
+        //List of languages
         var rlsui_languages = [
             {
                 id: 'en_US',
                 langfile: 'languages/en.json',
                 title: 'English (US)',
-                name: ' English (US)',
+                name: 'English (US)',
                 flagImg: 'img/flags/us.png',
                 flagTitle: 'United States'
             },
@@ -52,12 +52,24 @@
                 id: 'de_DE',
                 langfile: 'languages/de.json',
                 title: 'German',
-                name: ' Deutsch',
+                name: 'Deutsch',
                 flagImg: 'img/flags/de.png',
                 flagTitle: 'Germany'
             },
+            /*
+            {
+                //id for loaded language pack also can be 'fr'
+                id: 'fr_FR',
+                //path to language pack
+                langfile: 'languages/fr.json',
+                title: 'French',
+                name: 'French',
+                flagImg: 'img/flags/fr.png',
+                flagTitle: 'French'
+            },*/
         ];
 
+       //Language selector ui
         React.render(React.createElement(lang.UI, {
             items: rlsui_languages,
             selectedLang: window.lang.getsetting('lang', 'de_DE'),
