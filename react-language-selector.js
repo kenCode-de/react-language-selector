@@ -1,15 +1,32 @@
 React.LS = (function () {
-
 	var Lang = function (defaultLangfile, defaultLang) {
 		var self = this;
-		self.dLang = defaultLang;
-		self.dLangFile = defaultLangfile;
-		if (typeof(Storage) !== "undefined") {
-			self.set_load_lang(self.getsetting('lang', defaultLang), self.getsetting('langfile', defaultLangfile), true);
-		} else {
-			self.set_load_lang(defaultLang, defaultLangfile, true);
+
+		if (defaultLangfile) {
+			if (defaultLang) {
+				self.dLang = defaultLang;
+				self.dLangFile = defaultLangfile;
+			}
+			else {
+				self.dLang = defaultLangfile;
+				self.dLangFile = null;
+			}
+
+			if (self.getsetting('lang', self.dLang) != self.dLang) {
+				if (typeof(Storage) !== "undefined") {
+					self.set_load_lang(self.getsetting('lang', defaultLang), self.getsetting('langfile', defaultLangfile), true);
+				} else {
+					self.set_load_lang(defaultLang, defaultLangfile, true);
+				}
+			}
+
 		}
 	};
+
+	Lang.prototype.dLangFile = '';
+	Lang.prototype.dLang = '';
+	Lang.prototype.pack = [];
+	Lang.prototype.loadedfiles = [];
 
 	Array.prototype.contains = function (obj) {
 		var i = this.length;
@@ -21,17 +38,17 @@ React.LS = (function () {
 		return false;
 	};
 
-	Lang.prototype.dLangFile = '';
-	Lang.prototype.dLang = '';
-	Lang.prototype.pack = {};
-	Lang.prototype.loadedfiles = [];
-
 	Lang.prototype.ready = function (fn) {
 		if (document.readyState != 'loading') {
 			fn();
 		} else {
 			document.addEventListener('DOMContentLoaded', fn);
 		}
+	};
+
+	Lang.prototype.currentLang = function () {
+		var self = this;
+		return self.getsetting('lang', self.dLang);
 	};
 
 	Lang.prototype.loadLangPack = function (callback, myLangFile, isfirst) {
@@ -43,8 +60,12 @@ React.LS = (function () {
 				if (isfirst == true) {
 					self.pack = result;
 				} else {
-					for (var i = 0; i < result.length; i++) {
-						self.pack.push(result[i]);
+					if (self.pack) {
+						for (var i = 0; i < result.length; i++) {
+							self.pack.push(result[i]);
+						}
+					} else {
+						self.pack = result;
 					}
 				}
 				localStorage.setItem('langfile', myLangFile);
@@ -135,17 +156,16 @@ React.LS = (function () {
 			xmlhttp.send(null);
 
 			xmlhttp.onreadystatechange = function () {
-					if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 
-						self.loadedfiles.push(myfile);
-						callback(xmlhttp.responseText);
-					}
+					self.loadedfiles.push(myfile);
+					callback(xmlhttp.responseText);
+				}
 			};
 
 		}
 		catch (e) {
-			alert(e);
-			self.set_load_lang(self.dLang, self.dLangFile, false);
+			localStorage.clear();
 		}
 
 	};

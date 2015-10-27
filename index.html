@@ -31,11 +31,16 @@
     <div style="display: inline">
         <div id="language">Fast Companies ♥ Decentralization</div>
     </div>
-    <div style="display: inline"><img id="language" src=""></div>
+    <div style="display: inline"><img id="language" src="img/flags/United-States.png" alt="EN"></div>
 </nobr>
 <br>
 <script>
-    var lang = new React.LS('languages/de.json', 'de_DE');
+
+    //you can use this to load a lang pack at start
+    // var lang = new React.LS('languages/de.json', 'de_DE');
+
+    //by this you simply set the default lang
+    var lang = new React.LS('en_US');
 
     lang.ready(function () {
         //List of languages
@@ -57,23 +62,22 @@
                 flagTitle: 'Germany'
             },
             /*
-            {
-                //id for loaded language pack also can be 'fr'
-                id: 'fr_FR',
-                //path to language pack
-                langfile: 'languages/fr.json',
-                title: 'French',
-                name: 'French',
-                flagImg: 'img/flags/fr.png',
-                flagTitle: 'French'
-            },*/
+             {
+             //id for loaded language pack also can be 'fr'
+             id: 'fr_FR',
+             //path to language pack
+             langfile: 'languages/fr.json',
+             title: 'French',
+             name: 'French',
+             flagImg: 'img/flags/fr.png',
+             flagTitle: 'French'
+             },*/
         ];
 
-       //main part for loading language selector ui
+        //main part for loading language selector ui
         React.render(React.createElement(lang.UI, {
             items: rlsui_languages,
-            //this part got to be same as the default lang you defined at line 38
-            selectedLang: window.lang.getsetting('lang', 'de_DE'),
+            selectedLang: window.lang.currentLang(),
             onLanguageChanged: function (rlsui_lang) {
 
                 lang.set_load_lang(rlsui_lang.id, rlsui_lang.langfile);
