@@ -12,14 +12,9 @@ React.LS = (function () {
 				self.dLangFile = null;
 			}
 
-			if (self.getsetting('lang', self.dLang) != self.dLang) {
-				if (typeof(Storage) !== "undefined") {
-					self.set_load_lang(self.getsetting('lang', defaultLang), self.getsetting('langfile', defaultLangfile), true);
-				} else {
-					self.set_load_lang(defaultLang, defaultLangfile, true);
-				}
+			if (self.get_setting('lang', self.dLang) != self.dLang) {
+				self.set_load_lang(self.get_setting('lang', defaultLang), self.get_setting('langfile', defaultLangfile));
 			}
-
 		}
 	};
 
@@ -48,31 +43,27 @@ React.LS = (function () {
 
 	Lang.prototype.currentLang = function () {
 		var self = this;
-		return self.getsetting('lang', self.dLang);
+		return self.get_setting('lang', self.dLang);
 	};
 
-	Lang.prototype.loadLangPack = function (callback, myLangFile, isfirst) {
+	Lang.prototype.loadLangPack = function (callback, myLangFile) {
 		var self = this;
 
 		if (!self.loadedfiles.contains(myLangFile)) {
 			self.loadJSON(function (response) {
 				var result = JSON.parse(response);
-				if (isfirst == true) {
-					self.pack = result;
-				} else {
-					if (self.pack) {
-						for (var i = 0; i < result.length; i++) {
-							self.pack.push(result[i]);
-						}
-					} else {
-						self.pack = result;
+				if (self.pack) {
+					for (var i = 0; i < result.length; i++) {
+						self.pack.push(result[i]);
 					}
+				} else {
+					self.pack = result;
 				}
-				localStorage.setItem('langfile', myLangFile);
+				self.set_setting('langfile', myLangFile);
 				callback();
 			}, myLangFile);
 		} else {
-			localStorage.setItem('langfile', myLangFile);
+			self.set_setting('langfile', myLangFile);
 			callback();
 		}
 	};
@@ -122,7 +113,7 @@ React.LS = (function () {
 			}
 		}
 
-		localStorage.setItem('lang', myLang);
+		self.set_setting('lang', myLang);
 	};
 
 	Lang.prototype.set_load_lang = function (myLang, myLangFile, isfirst) {
@@ -140,8 +131,20 @@ React.LS = (function () {
 
 	};
 
-	Lang.prototype.getsetting = function (setKey, defaultval) {
-		return localStorage[setKey] || defaultval;
+	Lang.prototype.get_setting = function (setKey, defaultval) {
+		var temp = null;
+		if (typeof(Storage) !== "undefined") {
+			temp = localStorage[setKey] || defaultval;
+		} else {
+			temp = defaultval;
+		}
+		return temp;
+	};
+
+	Lang.prototype.set_setting = function (setKey, setVal) {
+		if (typeof(Storage) !== "undefined") {
+			localStorage.setItem(setKey, setVal);
+		}
 	};
 
 	Lang.prototype.loadJSON = function (callback, myfile) {
@@ -162,7 +165,6 @@ React.LS = (function () {
 					callback(xmlhttp.responseText);
 				}
 			};
-
 		}
 		catch (e) {
 			localStorage.clear();
