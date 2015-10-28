@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <link href="css/react-language-selector-ui.css" rel="stylesheet">
+
+    <script src="js/react-with-addons-0.13.3.min.js"></script>
+    <!-- language specific code -->
+    <script src="js/react-simplehtmlparser.min.js"></script>
+    <script src="js/react-language-selector.min.js"></script>
+    <!-- language specific code -->
+</head>
+<body>
+    <div id="langs"></div>
+&nbsp;
+<table>
+    <tr>
+        <td class="menu" nowrap>
+            <div style="display: inline"><a href="http://kencode.de/projects" id="language">projects</a></div>
+            &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+            <div style="display: inline"><a href="http://kencode.de/contact" id="language">contact</a></div>
+            &nbsp;
+        </td>
+
+    </tr>
+</table>
+<nobr>
+    <div style="display: inline">
+        <div id="language">Fast Companies ♥ Decentralization</div>
+    </div>
+    <div style="display: inline"><img id="language" src="img/flags/United-States.png" alt="EN"></div>
+</nobr>
+<br>
+<script>
+    //you can use this to load a lang pack at start
+    // var lang = new React.LS('languages/en.json', 'en_US');
+
+    //by this you simply set the default lang
+    var lang = new React.LS('en_US');
+
+    lang.ready(function () {
+        //List of languages
+        var rlsui_languages = [
+            {
+                id: 'en_US',
+                langfile: 'languages/en.json',
+                title: 'English (US)',
+                name: 'English (US)',
+                flagImg: 'img/flags/us.png',
+                flagTitle: 'United States'
+            },
+            {
+                id: 'de_DE',
+                langfile: 'languages/de.json',
+                title: 'German',
+                name: 'Deutsch',
+                flagImg: 'img/flags/de.png',
+                flagTitle: 'Germany'
+            },
+            /*
+             {
+             //id for loaded language pack also can be 'fr'
+             id: 'fr_FR',
+             //path to language pack
+             langfile: 'languages/fr.json',
+             title: 'French',
+             name: 'French',
+             flagImg: 'img/flags/fr.png',
+             flagTitle: 'French'
+             },*/
+        ];
+
+        //main part for loading language selector ui
+        React.render(React.createElement(lang.UI, {
+            items: rlsui_languages,
+            selectedLang: window.lang.currentLang(),
+            onLanguageChanged: function (rlsui_lang) {
+                lang.set_load_lang(rlsui_lang.id, rlsui_lang.langfile);
+            }
+        }), document.getElementById('langs'));
+    });
+</script>
+</body>
+</html>
