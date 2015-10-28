@@ -8,13 +8,11 @@
     <script src="js/react-with-addons-0.13.3.min.js"></script>
     <!-- language specific code -->
     <script src="js/react-simplehtmlparser.min.js"></script>
-    <script src="react-language-selector.min.js"></script>
+    <script src="js/react-language-selector.min.js"></script>
     <!-- language specific code -->
 </head>
 <body>
-<div ng-controller="DemoController" style="display: inline">
-    <div id="rlsui1"></div>
-</div>
+    <div id="langs"></div>
 &nbsp;
 <table>
     <tr>
@@ -35,9 +33,8 @@
 </nobr>
 <br>
 <script>
-
     //you can use this to load a lang pack at start
-    // var lang = new React.LS('languages/de.json', 'de_DE');
+    // var lang = new React.LS('languages/en.json', 'en_US');
 
     //by this you simply set the default lang
     var lang = new React.LS('en_US');
@@ -79,10 +76,9 @@
             items: rlsui_languages,
             selectedLang: window.lang.currentLang(),
             onLanguageChanged: function (rlsui_lang) {
-
                 lang.set_load_lang(rlsui_lang.id, rlsui_lang.langfile);
             }
-        }), document.getElementById('rlsui1'));
+        }), document.getElementById('langs'));
     });
 </script>
 </body>
