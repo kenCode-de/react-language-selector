@@ -1,0 +1,31 @@
+{
+  "name": "react-language-selector",
+  "version": "1.0",
+  "description": "A quick little language switcher drop-down select menu written in React.js. Well commented and supports unlimited languages using JSON files for use on any website.",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenCode-de/react-language-selector.git"
+  },
+  "keywords": [
+    "react",
+    "language",
+    "selector",
+    "react-component",
+    "react-language-switcher",
+    "react-language-selector-component",
+    "react-language-selector-ui",
+    "react-language-selector",
+    "switcher",
+    "widget"
+  ],
+  "author": "BitShares Munich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kenCode-de/react-language-selector/issues"
+  },
+  "homepage": "https://github.com/kenCode-de/react-language-selector/",
+  "dependencies": {
+    "react": "^0.13.3"
+  }
+}
