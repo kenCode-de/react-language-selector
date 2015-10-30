@@ -1,5 +1,2 @@
 # React Language Selector
-This is the langpack picker/switcher that will be used in all BitShares POS systems. It's written in React.js with JSON (no more jquery!). 
- 
-<b>Please vote, it helps me fund these apps!</b><br>
-Open BitShares wallet > Advanced > Console: approve delegate.kencode true 
+A quick little language switcher drop-down select menu written in React.js. Well commented and supports unlimited languages using JSON files for use on any website.
