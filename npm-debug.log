@@ -1,0 +1,1343 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\Giti\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'react-bootstrap' ]
+2 info using npm@3.3.3
+3 info using node@v4.1.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData react-bootstrap
+8 silly fetchNamedPackageData react-bootstrap
+9 silly mapToRegistry name react-bootstrap
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/react-bootstrap
+13 verbose request uri https://registry.npmjs.org/react-bootstrap
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 3:24:48 PM
+16 verbose request id 281487eb150df120
+17 verbose etag "8XXY9F34SOGYCCXNYTKM9KZGY"
+18 http request GET https://registry.npmjs.org/react-bootstrap
+19 http 304 https://registry.npmjs.org/react-bootstrap
+20 silly get cb [ 304,
+20 silly get   { date: 'Fri, 30 Oct 2015 11:54:58 GMT',
+20 silly get     via: '1.1 varnish',
+20 silly get     'cache-control': 'max-age=60',
+20 silly get     etag: '"8XXY9F34SOGYCCXNYTKM9KZGY"',
+20 silly get     age: '38',
+20 silly get     connection: 'keep-alive',
+20 silly get     'x-served-by': 'cache-ams4138-AMS',
+20 silly get     'x-cache': 'HIT',
+20 silly get     'x-cache-hits': '1',
+20 silly get     'x-timer': 'S1446206098.200179,VS0,VE1',
+20 silly get     vary: 'Accept' } ]
+21 verbose etag https://registry.npmjs.org/react-bootstrap from cache
+22 verbose get saving react-bootstrap to C:\Users\Giti\AppData\Roaming\npm-cache\registry.npmjs.org\react-bootstrap\.cache.json
+23 silly install normalizeTree
+24 silly loadCurrentTree Finishing
+25 silly loadIdealTree Starting
+26 silly install loadIdealTree
+27 silly cloneCurrentTree Starting
+28 silly install cloneCurrentTreeToIdealTree
+29 silly cloneCurrentTree Finishing
+30 silly loadShrinkwrap Starting
+31 silly install loadShrinkwrap
+32 silly loadShrinkwrap Finishing
+33 silly loadAllDepsIntoIdealTree Starting
+34 silly install loadAllDepsIntoIdealTree
+35 silly resolveWithNewModule react-bootstrap@0.27.3 checking installable status
+36 silly cache add args [ 'react-bootstrap', null ]
+37 verbose cache add spec react-bootstrap
+38 silly cache add parsed spec Result {
+38 silly cache add   raw: 'react-bootstrap',
+38 silly cache add   scope: null,
+38 silly cache add   name: 'react-bootstrap',
+38 silly cache add   rawSpec: '',
+38 silly cache add   spec: '*',
+38 silly cache add   type: 'range' }
+39 silly addNamed react-bootstrap@*
+40 verbose addNamed "*" is a valid semver range for react-bootstrap
+41 silly addNameRange { name: 'react-bootstrap', range: '*', hasData: false }
+42 silly mapToRegistry name react-bootstrap
+43 silly mapToRegistry using default registry
+44 silly mapToRegistry registry https://registry.npmjs.org/
+45 silly mapToRegistry uri https://registry.npmjs.org/react-bootstrap
+46 verbose addNameRange registry:https://registry.npmjs.org/react-bootstrap not in flight; fetching
+47 verbose get https://registry.npmjs.org/react-bootstrap not expired, no request
+48 silly addNameRange number 2 { name: 'react-bootstrap', range: '*', hasData: true }
+49 silly addNameRange versions [ 'react-bootstrap',
+49 silly addNameRange   [ '0.2.0',
+49 silly addNameRange     '0.3.0',
+49 silly addNameRange     '0.4.0',
+49 silly addNameRange     '0.4.2',
+49 silly addNameRange     '0.5.0',
+49 silly addNameRange     '0.5.1',
+49 silly addNameRange     '0.5.2',
+49 silly addNameRange     '0.6.2',
+49 silly addNameRange     '0.7.0',
+49 silly addNameRange     '0.6.0',
+49 silly addNameRange     '0.6.1',
+49 silly addNameRange     '0.7.1',
+49 silly addNameRange     '0.7.2',
+49 silly addNameRange     '0.8.0',
+49 silly addNameRange     '0.8.1',
+49 silly addNameRange     '0.8.2',
+49 silly addNameRange     '0.9.0',
+49 silly addNameRange     '0.10.0',
+49 silly addNameRange     '0.10.1',
+49 silly addNameRange     '0.10.2',
+49 silly addNameRange     '0.11.0',
+49 silly addNameRange     '0.11.1',
+49 silly addNameRange     '0.12.0',
+49 silly addNameRange     '0.13.0',
+49 silly addNameRange     '0.13.1',
+49 silly addNameRange     '0.13.2',
+49 silly addNameRange     '0.13.3',
+49 silly addNameRange     '0.14.0',
+49 silly addNameRange     '0.14.1',
+49 silly addNameRange     '0.15.0',
+49 silly addNameRange     '0.15.1',
+49 silly addNameRange     '0.16.0',
+49 silly addNameRange     '0.16.1',
+49 silly addNameRange     '0.17.0',
+49 silly addNameRange     '0.18.0',
+49 silly addNameRange     '0.19.0',
+49 silly addNameRange     '0.19.1',
+49 silly addNameRange     '0.20.0',
+49 silly addNameRange     '0.20.1',
+49 silly addNameRange     '0.20.2',
+49 silly addNameRange     '0.20.3',
+49 silly addNameRange     '0.21.0',
+49 silly addNameRange     '0.21.1',
+49 silly addNameRange     '0.21.2',
+49 silly addNameRange     '0.22.0',
+49 silly addNameRange     '0.22.1',
+49 silly addNameRange     '0.22.2',
+49 silly addNameRange     '0.22.3',
+49 silly addNameRange     '0.22.4',
+49 silly addNameRange     '0.22.5',
+49 silly addNameRange     '0.22.6',
+49 silly addNameRange     '0.23.0',
+49 silly addNameRange     '0.23.1',
+49 silly addNameRange     '0.24.0-alpha.0',
+49 silly addNameRange     '0.23.2',
+49 silly addNameRange     '0.24.0-alpha.1',
+49 silly addNameRange     '0.23.3',
+49 silly addNameRange     '0.24.0-alpha.2',
+49 silly addNameRange     '0.23.4',
+49 silly addNameRange     '0.24.0-alpha.3',
+49 silly addNameRange     '0.23.5',
+49 silly addNameRange     '0.24.0-alpha.4',
+49 silly addNameRange     '0.23.6',
+49 silly addNameRange     '0.23.7',
+49 silly addNameRange     '0.24.0',
+49 silly addNameRange     '0.24.1',
+49 silly addNameRange     '0.24.2',
+49 silly addNameRange     '0.24.3',
+49 silly addNameRange     '0.25.0-alpha.0',
+49 silly addNameRange     '0.24.4',
+49 silly addNameRange     '0.25.0-alpha.1',
+49 silly addNameRange     '0.24.5',
+49 silly addNameRange     '0.24.5-react-pre.0',
+49 silly addNameRange     '0.25.0',
+49 silly addNameRange     '0.25.100-react-pre.0',
+49 silly addNameRange     '0.25.1',
+49 silly addNameRange     '0.25.2',
+49 silly addNameRange     '0.25.100-react-pre.1',
+49 silly addNameRange     '0.26.0',
+49 silly addNameRange     '0.26.1',
+49 silly addNameRange     '0.26.2',
+49 silly addNameRange     '0.26.3',
+49 silly addNameRange     '0.26.4',
+49 silly addNameRange     '0.27.0',
+49 silly addNameRange     '0.27.1',
+49 silly addNameRange     '0.27.2',
+49 silly addNameRange     '0.27.3' ] ]
+50 silly addNamed react-bootstrap@0.27.3
+51 verbose addNamed "0.27.3" is a plain semver version for react-bootstrap
+52 silly cache afterAdd react-bootstrap@0.27.3
+53 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\react-bootstrap\0.27.3\package\package.json not in flight; writing
+54 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\react-bootstrap\0.27.3\package\package.json written
+55 silly fetchNamedPackageData babel-runtime
+56 silly mapToRegistry name babel-runtime
+57 silly mapToRegistry using default registry
+58 silly mapToRegistry registry https://registry.npmjs.org/
+59 silly mapToRegistry uri https://registry.npmjs.org/babel-runtime
+60 silly fetchNamedPackageData classnames
+61 silly mapToRegistry name classnames
+62 silly mapToRegistry using default registry
+63 silly mapToRegistry registry https://registry.npmjs.org/
+64 silly mapToRegistry uri https://registry.npmjs.org/classnames
+65 silly fetchNamedPackageData dom-helpers
+66 silly mapToRegistry name dom-helpers
+67 silly mapToRegistry using default registry
+68 silly mapToRegistry registry https://registry.npmjs.org/
+69 silly mapToRegistry uri https://registry.npmjs.org/dom-helpers
+70 silly fetchNamedPackageData keycode
+71 silly mapToRegistry name keycode
+72 silly mapToRegistry using default registry
+73 silly mapToRegistry registry https://registry.npmjs.org/
+74 silly mapToRegistry uri https://registry.npmjs.org/keycode
+75 silly fetchNamedPackageData lodash-compat
+76 silly mapToRegistry name lodash-compat
+77 silly mapToRegistry using default registry
+78 silly mapToRegistry registry https://registry.npmjs.org/
+79 silly mapToRegistry uri https://registry.npmjs.org/lodash-compat
+80 silly fetchNamedPackageData react-overlays
+81 silly mapToRegistry name react-overlays
+82 silly mapToRegistry using default registry
+83 silly mapToRegistry registry https://registry.npmjs.org/
+84 silly mapToRegistry uri https://registry.npmjs.org/react-overlays
+85 silly fetchNamedPackageData uncontrollable
+86 silly mapToRegistry name uncontrollable
+87 silly mapToRegistry using default registry
+88 silly mapToRegistry registry https://registry.npmjs.org/
+89 silly mapToRegistry uri https://registry.npmjs.org/uncontrollable
+90 silly fetchNamedPackageData react-prop-types
+91 silly mapToRegistry name react-prop-types
+92 silly mapToRegistry using default registry
+93 silly mapToRegistry registry https://registry.npmjs.org/
+94 silly mapToRegistry uri https://registry.npmjs.org/react-prop-types
+95 silly fetchNamedPackageData warning
+96 silly mapToRegistry name warning
+97 silly mapToRegistry using default registry
+98 silly mapToRegistry registry https://registry.npmjs.org/
+99 silly mapToRegistry uri https://registry.npmjs.org/warning
+100 verbose request uri https://registry.npmjs.org/babel-runtime
+101 verbose request no auth needed
+102 info attempt registry request try #1 at 3:24:52 PM
+103 verbose etag "91VVB59WU2R2Z69XVRQBEK7"
+104 http request GET https://registry.npmjs.org/babel-runtime
+105 verbose request uri https://registry.npmjs.org/classnames
+106 verbose request no auth needed
+107 info attempt registry request try #1 at 3:24:52 PM
+108 verbose etag "4MM62ZYYIVSETKI6CS1ZRLQY6"
+109 http request GET https://registry.npmjs.org/classnames
+110 verbose request uri https://registry.npmjs.org/dom-helpers
+111 verbose request no auth needed
+112 info attempt registry request try #1 at 3:24:52 PM
+113 verbose etag "6Z7CCK9T3N57Z1M9424T3S3AC"
+114 http request GET https://registry.npmjs.org/dom-helpers
+115 verbose request uri https://registry.npmjs.org/keycode
+116 verbose request no auth needed
+117 info attempt registry request try #1 at 3:24:52 PM
+118 verbose etag "4357EE4E3925BTGCKGF330SRA"
+119 http request GET https://registry.npmjs.org/keycode
+120 verbose request uri https://registry.npmjs.org/lodash-compat
+121 verbose request no auth needed
+122 info attempt registry request try #1 at 3:24:52 PM
+123 verbose etag "EO66IAQUJSPQPWMUR0VX5VLFG"
+124 http request GET https://registry.npmjs.org/lodash-compat
+125 verbose request uri https://registry.npmjs.org/uncontrollable
+126 verbose request no auth needed
+127 info attempt registry request try #1 at 3:24:52 PM
+128 verbose etag "DY3X16G0IQTRN1YDB03NXFUUG"
+129 http request GET https://registry.npmjs.org/uncontrollable
+130 verbose request uri https://registry.npmjs.org/react-overlays
+131 verbose request no auth needed
+132 info attempt registry request try #1 at 3:24:52 PM
+133 verbose etag "CWSH26SVQXCSFEET2B8H8RMPG"
+134 http request GET https://registry.npmjs.org/react-overlays
+135 verbose request uri https://registry.npmjs.org/react-prop-types
+136 verbose request no auth needed
+137 info attempt registry request try #1 at 3:24:52 PM
+138 verbose etag "DO4KQ10NZZY78VX9DXXH0REBK"
+139 http request GET https://registry.npmjs.org/react-prop-types
+140 verbose request uri https://registry.npmjs.org/warning
+141 verbose request no auth needed
+142 info attempt registry request try #1 at 3:24:52 PM
+143 verbose etag "A5SV89XDCSL7PDKCUJ931BHQL"
+144 http request GET https://registry.npmjs.org/warning
+145 http 304 https://registry.npmjs.org/classnames
+146 silly get cb [ 304,
+146 silly get   { date: 'Fri, 30 Oct 2015 11:55:00 GMT',
+146 silly get     via: '1.1 varnish',
+146 silly get     'cache-control': 'max-age=60',
+146 silly get     etag: '"4MM62ZYYIVSETKI6CS1ZRLQY6"',
+146 silly get     age: '45',
+146 silly get     connection: 'keep-alive',
+146 silly get     'x-served-by': 'cache-ams4137-AMS',
+146 silly get     'x-cache': 'HIT',
+146 silly get     'x-cache-hits': '1',
+146 silly get     'x-timer': 'S1446206100.234012,VS0,VE0',
+146 silly get     vary: 'Accept' } ]
+147 verbose etag https://registry.npmjs.org/classnames from cache
+148 verbose get saving classnames to C:\Users\Giti\AppData\Roaming\npm-cache\registry.npmjs.org\classnames\.cache.json
+149 silly resolveWithNewModule classnames@2.2.0 checking installable status
+150 silly cache add args [ 'classnames@^2.1.5', null ]
+151 verbose cache add spec classnames@^2.1.5
+152 silly cache add parsed spec Result {
+152 silly cache add   raw: 'classnames@^2.1.5',
+152 silly cache add   scope: null,
+152 silly cache add   name: 'classnames',
+152 silly cache add   rawSpec: '^2.1.5',
+152 silly cache add   spec: '>=2.1.5 <3.0.0',
+152 silly cache add   type: 'range' }
+153 silly addNamed classnames@>=2.1.5 <3.0.0
+154 verbose addNamed ">=2.1.5 <3.0.0" is a valid semver range for classnames
+155 silly addNameRange { name: 'classnames', range: '>=2.1.5 <3.0.0', hasData: false }
+156 silly mapToRegistry name classnames
+157 silly mapToRegistry using default registry
+158 silly mapToRegistry registry https://registry.npmjs.org/
+159 silly mapToRegistry uri https://registry.npmjs.org/classnames
+160 verbose addNameRange registry:https://registry.npmjs.org/classnames not in flight; fetching
+161 verbose get https://registry.npmjs.org/classnames not expired, no request
+162 silly addNameRange number 2 { name: 'classnames', range: '>=2.1.5 <3.0.0', hasData: true }
+163 silly addNameRange versions [ 'classnames',
+163 silly addNameRange   [ '1.0.0',
+163 silly addNameRange     '1.1.0',
+163 silly addNameRange     '1.1.1',
+163 silly addNameRange     '1.1.2',
+163 silly addNameRange     '1.1.3',
+163 silly addNameRange     '1.1.4',
+163 silly addNameRange     '1.2.0',
+163 silly addNameRange     '1.2.1',
+163 silly addNameRange     '1.2.2',
+163 silly addNameRange     '2.0.0',
+163 silly addNameRange     '2.1.0',
+163 silly addNameRange     '2.1.1',
+163 silly addNameRange     '2.1.2',
+163 silly addNameRange     '2.1.3',
+163 silly addNameRange     '2.1.4',
+163 silly addNameRange     '2.1.5',
+163 silly addNameRange     '2.2.0' ] ]
+164 silly addNamed classnames@2.2.0
+165 verbose addNamed "2.2.0" is a plain semver version for classnames
+166 silly cache afterAdd classnames@2.2.0
+167 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\classnames\2.2.0\package\package.json not in flight; writing
+168 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\classnames\2.2.0\package\package.json written
+169 http 304 https://registry.npmjs.org/babel-runtime
+170 silly get cb [ 304,
+170 silly get   { date: 'Fri, 30 Oct 2015 11:55:00 GMT',
+170 silly get     via: '1.1 varnish',
+170 silly get     'cache-control': 'max-age=60',
+170 silly get     etag: '"91VVB59WU2R2Z69XVRQBEK7"',
+170 silly get     age: '47',
+170 silly get     connection: 'keep-alive',
+170 silly get     'x-served-by': 'cache-ams4124-AMS',
+170 silly get     'x-cache': 'HIT',
+170 silly get     'x-cache-hits': '1',
+170 silly get     'x-timer': 'S1446206100.433527,VS0,VE1',
+170 silly get     vary: 'Accept' } ]
+171 verbose etag https://registry.npmjs.org/babel-runtime from cache
+172 verbose get saving babel-runtime to C:\Users\Giti\AppData\Roaming\npm-cache\registry.npmjs.org\babel-runtime\.cache.json
+173 silly resolveWithNewModule babel-runtime@5.8.29 checking installable status
+174 silly cache add args [ 'babel-runtime@^5.8.25', null ]
+175 verbose cache add spec babel-runtime@^5.8.25
+176 silly cache add parsed spec Result {
+176 silly cache add   raw: 'babel-runtime@^5.8.25',
+176 silly cache add   scope: null,
+176 silly cache add   name: 'babel-runtime',
+176 silly cache add   rawSpec: '^5.8.25',
+176 silly cache add   spec: '>=5.8.25 <6.0.0',
+176 silly cache add   type: 'range' }
+177 silly addNamed babel-runtime@>=5.8.25 <6.0.0
+178 verbose addNamed ">=5.8.25 <6.0.0" is a valid semver range for babel-runtime
+179 silly addNameRange { name: 'babel-runtime',
+179 silly addNameRange   range: '>=5.8.25 <6.0.0',
+179 silly addNameRange   hasData: false }
+180 silly mapToRegistry name babel-runtime
+181 silly mapToRegistry using default registry
+182 silly mapToRegistry registry https://registry.npmjs.org/
+183 silly mapToRegistry uri https://registry.npmjs.org/babel-runtime
+184 verbose addNameRange registry:https://registry.npmjs.org/babel-runtime not in flight; fetching
+185 verbose get https://registry.npmjs.org/babel-runtime not expired, no request
+186 silly addNameRange number 2 { name: 'babel-runtime',
+186 silly addNameRange   range: '>=5.8.25 <6.0.0',
+186 silly addNameRange   hasData: true }
+187 silly addNameRange versions [ 'babel-runtime',
+187 silly addNameRange   [ '4.0.1',
+187 silly addNameRange     '4.0.2',
+187 silly addNameRange     '4.1.1',
+187 silly addNameRange     '4.2.0',
+187 silly addNameRange     '4.2.1',
+187 silly addNameRange     '4.3.0',
+187 silly addNameRange     '4.4.1',
+187 silly addNameRange     '4.4.2',
+187 silly addNameRange     '4.4.3',
+187 silly addNameRange     '4.4.4',
+187 silly addNameRange     '4.4.5',
+187 silly addNameRange     '4.4.6',
+187 silly addNameRange     '4.5.0',
+187 silly addNameRange     '4.5.1',
+187 silly addNameRange     '4.5.2',
+187 silly addNameRange     '4.5.3',
+187 silly addNameRange     '4.5.4',
+187 silly addNameRange     '4.5.5',
+187 silly addNameRange     '4.6.0',
+187 silly addNameRange     '4.6.1',
+187 silly addNameRange     '4.6.3',
+187 silly addNameRange     '4.6.4',
+187 silly addNameRange     '4.6.5',
+187 silly addNameRange     '4.6.6',
+187 silly addNameRange     '4.7.0',
+187 silly addNameRange     '4.7.1',
+187 silly addNameRange     '4.7.2',
+187 silly addNameRange     '4.7.3',
+187 silly addNameRange     '4.7.4',
+187 silly addNameRange     '4.7.5',
+187 silly addNameRange     '4.7.6',
+187 silly addNameRange     '4.7.7',
+187 silly addNameRange     '4.7.8',
+187 silly addNameRange     '4.7.9',
+187 silly addNameRange     '4.7.10',
+187 silly addNameRange     '4.7.11',
+187 silly addNameRange     '4.7.12',
+187 silly addNameRange     '4.7.13',
+187 silly addNameRange     '4.7.14',
+187 silly addNameRange     '4.7.15',
+187 silly addNameRange     '4.7.16',
+187 silly addNameRange     '5.0.0-beta1',
+187 silly addNameRange     '5.0.0-beta2',
+187 silly addNameRange     '5.0.0-beta3',
+187 silly addNameRange     '5.0.0-beta4',
+187 silly addNameRange     '5.0.0',
+187 silly addNameRange     '5.0.1',
+187 silly addNameRange     '5.0.2',
+187 silly addNameRange     '5.0.3',
+187 silly addNameRange     '5.0.4',
+187 silly addNameRange     '5.0.5',
+187 silly addNameRange     '5.0.6',
+187 silly addNameRange     '5.0.7',
+187 silly addNameRange     '5.0.8',
+187 silly addNameRange     '5.0.9',
+187 silly addNameRange     '5.0.10',
+187 silly addNameRange     '5.0.11',
+187 silly addNameRange     '5.0.12',
+187 silly addNameRange     '5.0.13',
+187 silly addNameRange     '5.1.0',
+187 silly addNameRange     '5.1.1',
+187 silly addNameRange     '5.1.2',
+187 silly addNameRange     '5.1.3',
+187 silly addNameRange     '5.1.4',
+187 silly addNameRange     '5.1.5',
+187 silly addNameRange     '5.1.6',
+187 silly addNameRange     '5.1.7',
+187 silly addNameRange     '5.1.8',
+187 silly addNameRange     '5.1.9',
+187 silly addNameRange     '5.1.10',
+187 silly addNameRange     '5.1.11',
+187 silly addNameRange     '5.1.12',
+187 silly addNameRange     '5.1.13',
+187 silly addNameRange     '5.2.0',
+187 silly addNameRange     '5.2.1',
+187 silly addNameRange     '5.2.2',
+187 silly addNameRange     '5.2.3',
+187 silly addNameRange     '5.2.4',
+187 silly addNameRange     '5.2.5',
+187 silly addNameRange     '5.2.6',
+187 silly addNameRange     '5.2.7',
+187 silly addNameRange     '5.2.9',
+187 silly addNameRange     '5.2.10',
+187 silly addNameRange     '5.2.11',
+187 silly addNameRange     '5.2.12',
+187 silly addNameRange     '5.2.13',
+187 silly addNameRange     '5.2.14',
+187 silly addNameRange     '5.2.15',
+187 silly addNameRange     '5.2.16',
+187 silly addNameRange     '5.2.17',
+187 silly addNameRange     '5.3.0',
+187 silly addNameRange     '5.3.1',
+187 silly addNameRange     '5.3.2',
+187 silly addNameRange     '5.3.3',
+187 silly addNameRange     '5.4.0',
+187 silly addNameRange     '5.4.1',
+187 silly addNameRange     '5.4.2',
+187 silly addNameRange     '5.4.3',
+187 silly addNameRange     '5.4.4',
+187 silly addNameRange     '5.4.5',
+187 silly addNameRange     '5.4.6',
+187 silly addNameRange     '5.4.7',
+187 silly addNameRange     '5.5.0',
+187 silly addNameRange     '5.5.1',
+187 silly addNameRange     '5.5.2',
+187 silly addNameRange     '5.5.3',
+187 silly addNameRange     '5.5.4',
+187 silly addNameRange     '5.5.5',
+187 silly addNameRange     '5.5.6',
+187 silly addNameRange     '5.5.7',
+187 silly addNameRange     '5.5.8',
+187 silly addNameRange     '5.6.0',
+187 silly addNameRange     '5.6.1',
+187 silly addNameRange     '5.6.2',
+187 silly addNameRange     '5.6.3',
+187 silly addNameRange     '5.6.4',
+187 silly addNameRange     '5.6.5',
+187 silly addNameRange     '5.6.6',
+187 silly addNameRange     '5.6.7',
+187 silly addNameRange     '5.6.8',
+187 silly addNameRange     '5.6.9',
+187 silly addNameRange     '5.6.10',
+187 silly addNameRange     '5.6.11',
+187 silly addNameRange     '5.6.12',
+187 silly addNameRange     '5.6.14',
+187 silly addNameRange     '5.6.15',
+187 silly addNameRange     '5.6.16',
+187 silly addNameRange     '5.6.17',
+187 silly addNameRange     '5.6.18',
+187 silly addNameRange     '5.6.19',
+187 silly addNameRange     '5.6.20',
+187 silly addNameRange     '5.7.0',
+187 silly addNameRange     '5.8.2',
+187 silly addNameRange     '5.8.3',
+187 silly addNameRange     '5.8.5',
+187 silly addNameRange     '5.8.8',
+187 silly addNameRange     '5.8.9',
+187 silly addNameRange     '5.8.12',
+187 silly addNameRange     '5.8.19',
+187 silly addNameRange     '5.8.20',
+187 silly addNameRange     '5.8.24',
+187 silly addNameRange     '5.8.25',
+187 silly addNameRange     '5.8.29',
+187 silly addNameRange     '6.0.2',
+187 silly addNameRange     '6.0.8',
+187 silly addNameRange     '6.0.12' ] ]
+188 silly addNamed babel-runtime@5.8.29
+189 verbose addNamed "5.8.29" is a plain semver version for babel-runtime
+190 silly cache afterAdd babel-runtime@5.8.29
+191 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\babel-runtime\5.8.29\package\package.json not in flight; writing
+192 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\babel-runtime\5.8.29\package\package.json written
+193 http 304 https://registry.npmjs.org/dom-helpers
+194 silly get cb [ 304,
+194 silly get   { date: 'Fri, 30 Oct 2015 11:55:00 GMT',
+194 silly get     via: '1.1 varnish',
+194 silly get     'cache-control': 'max-age=60',
+194 silly get     etag: '"6Z7CCK9T3N57Z1M9424T3S3AC"',
+194 silly get     age: '0',
+194 silly get     connection: 'keep-alive',
+194 silly get     'x-served-by': 'cache-ams4139-AMS',
+194 silly get     'x-cache': 'HIT',
+194 silly get     'x-cache-hits': '1',
+194 silly get     'x-timer': 'S1446206100.555279,VS0,VE174',
+194 silly get     vary: 'Accept' } ]
+195 verbose etag https://registry.npmjs.org/dom-helpers from cache
+196 verbose get saving dom-helpers to C:\Users\Giti\AppData\Roaming\npm-cache\registry.npmjs.org\dom-helpers\.cache.json
+197 silly resolveWithNewModule dom-helpers@2.4.0 checking installable status
+198 silly cache add args [ 'dom-helpers@^2.4.0', null ]
+199 verbose cache add spec dom-helpers@^2.4.0
+200 silly cache add parsed spec Result {
+200 silly cache add   raw: 'dom-helpers@^2.4.0',
+200 silly cache add   scope: null,
+200 silly cache add   name: 'dom-helpers',
+200 silly cache add   rawSpec: '^2.4.0',
+200 silly cache add   spec: '>=2.4.0 <3.0.0',
+200 silly cache add   type: 'range' }
+201 silly addNamed dom-helpers@>=2.4.0 <3.0.0
+202 verbose addNamed ">=2.4.0 <3.0.0" is a valid semver range for dom-helpers
+203 silly addNameRange { name: 'dom-helpers', range: '>=2.4.0 <3.0.0', hasData: false }
+204 silly mapToRegistry name dom-helpers
+205 silly mapToRegistry using default registry
+206 silly mapToRegistry registry https://registry.npmjs.org/
+207 silly mapToRegistry uri https://registry.npmjs.org/dom-helpers
+208 verbose addNameRange registry:https://registry.npmjs.org/dom-helpers not in flight; fetching
+209 verbose get https://registry.npmjs.org/dom-helpers not expired, no request
+210 silly addNameRange number 2 { name: 'dom-helpers', range: '>=2.4.0 <3.0.0', hasData: true }
+211 silly addNameRange versions [ 'dom-helpers',
+211 silly addNameRange   [ '1.0.0',
+211 silly addNameRange     '1.0.1',
+211 silly addNameRange     '1.0.2',
+211 silly addNameRange     '1.1.0',
+211 silly addNameRange     '1.2.0',
+211 silly addNameRange     '1.2.1',
+211 silly addNameRange     '1.2.2',
+211 silly addNameRange     '1.2.3',
+211 silly addNameRange     '1.2.4',
+211 silly addNameRange     '1.3.1',
+211 silly addNameRange     '1.3.2',
+211 silly addNameRange     '1.3.3',
+211 silly addNameRange     '2.0.0',
+211 silly addNameRange     '2.1.0',
+211 silly addNameRange     '2.2.0',
+211 silly addNameRange     '2.2.2',
+211 silly addNameRange     '2.2.4',
+211 silly addNameRange     '2.3.0',
+211 silly addNameRange     '2.4.0' ] ]
+212 silly addNamed dom-helpers@2.4.0
+213 verbose addNamed "2.4.0" is a plain semver version for dom-helpers
+214 silly cache afterAdd dom-helpers@2.4.0
+215 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\dom-helpers\2.4.0\package\package.json not in flight; writing
+216 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\dom-helpers\2.4.0\package\package.json written
+217 http 304 https://registry.npmjs.org/lodash-compat
+218 silly get cb [ 304,
+218 silly get   { date: 'Fri, 30 Oct 2015 11:55:00 GMT',
+218 silly get     via: '1.1 varnish',
+218 silly get     'cache-control': 'max-age=60',
+218 silly get     etag: '"EO66IAQUJSPQPWMUR0VX5VLFG"',
+218 silly get     age: '4',
+218 silly get     connection: 'keep-alive',
+218 silly get     'x-served-by': 'cache-ams4132-AMS',
+218 silly get     'x-cache': 'HIT',
+218 silly get     'x-cache-hits': '1',
+218 silly get     'x-timer': 'S1446206100.799083,VS0,VE0',
+218 silly get     vary: 'Accept' } ]
+219 verbose etag https://registry.npmjs.org/lodash-compat from cache
+220 verbose get saving lodash-compat to C:\Users\Giti\AppData\Roaming\npm-cache\registry.npmjs.org\lodash-compat\.cache.json
+221 silly resolveWithNewModule lodash-compat@3.10.1 checking installable status
+222 silly cache add args [ 'lodash-compat@^3.10.1', null ]
+223 verbose cache add spec lodash-compat@^3.10.1
+224 silly cache add parsed spec Result {
+224 silly cache add   raw: 'lodash-compat@^3.10.1',
+224 silly cache add   scope: null,
+224 silly cache add   name: 'lodash-compat',
+224 silly cache add   rawSpec: '^3.10.1',
+224 silly cache add   spec: '>=3.10.1 <4.0.0',
+224 silly cache add   type: 'range' }
+225 silly addNamed lodash-compat@>=3.10.1 <4.0.0
+226 verbose addNamed ">=3.10.1 <4.0.0" is a valid semver range for lodash-compat
+227 silly addNameRange { name: 'lodash-compat',
+227 silly addNameRange   range: '>=3.10.1 <4.0.0',
+227 silly addNameRange   hasData: false }
+228 silly mapToRegistry name lodash-compat
+229 silly mapToRegistry using default registry
+230 silly mapToRegistry registry https://registry.npmjs.org/
+231 silly mapToRegistry uri https://registry.npmjs.org/lodash-compat
+232 verbose addNameRange registry:https://registry.npmjs.org/lodash-compat not in flight; fetching
+233 verbose get https://registry.npmjs.org/lodash-compat not expired, no request
+234 silly addNameRange number 2 { name: 'lodash-compat',
+234 silly addNameRange   range: '>=3.10.1 <4.0.0',
+234 silly addNameRange   hasData: true }
+235 silly addNameRange versions [ 'lodash-compat',
+235 silly addNameRange   [ '3.0.0',
+235 silly addNameRange     '3.0.1',
+235 silly addNameRange     '3.1.0',
+235 silly addNameRange     '3.2.0',
+235 silly addNameRange     '3.3.0',
+235 silly addNameRange     '3.3.1',
+235 silly addNameRange     '3.4.0',
+235 silly addNameRange     '3.5.0',
+235 silly addNameRange     '3.6.0',
+235 silly addNameRange     '3.7.0',
+235 silly addNameRange     '3.8.0',
+235 silly addNameRange     '3.9.0',
+235 silly addNameRange     '3.9.1',
+235 silly addNameRange     '3.9.2',
+235 silly addNameRange     '3.9.3',
+235 silly addNameRange     '3.10.0',
+235 silly addNameRange     '3.10.1' ] ]
+236 silly addNamed lodash-compat@3.10.1
+237 verbose addNamed "3.10.1" is a plain semver version for lodash-compat
+238 silly cache afterAdd lodash-compat@3.10.1
+239 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\lodash-compat\3.10.1\package\package.json not in flight; writing
+240 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\lodash-compat\3.10.1\package\package.json written
+241 http 304 https://registry.npmjs.org/react-overlays
+242 silly get cb [ 304,
+242 silly get   { date: 'Fri, 30 Oct 2015 11:55:00 GMT',
+242 silly get     via: '1.1 varnish',
+242 silly get     'cache-control': 'max-age=60',
+242 silly get     etag: '"CWSH26SVQXCSFEET2B8H8RMPG"',
+242 silly get     age: '0',
+242 silly get     connection: 'keep-alive',
+242 silly get     'x-served-by': 'cache-ams4122-AMS',
+242 silly get     'x-cache': 'HIT',
+242 silly get     'x-cache-hits': '1',
+242 silly get     'x-timer': 'S1446206100.872141,VS0,VE94',
+242 silly get     vary: 'Accept' } ]
+243 verbose etag https://registry.npmjs.org/react-overlays from cache
+244 verbose get saving react-overlays to C:\Users\Giti\AppData\Roaming\npm-cache\registry.npmjs.org\react-overlays\.cache.json
+245 silly resolveWithNewModule react-overlays@0.5.0 checking installable status
+246 silly cache add args [ 'react-overlays@^0.5.0', null ]
+247 verbose cache add spec react-overlays@^0.5.0
+248 silly cache add parsed spec Result {
+248 silly cache add   raw: 'react-overlays@^0.5.0',
+248 silly cache add   scope: null,
+248 silly cache add   name: 'react-overlays',
+248 silly cache add   rawSpec: '^0.5.0',
+248 silly cache add   spec: '>=0.5.0 <0.6.0',
+248 silly cache add   type: 'range' }
+249 silly addNamed react-overlays@>=0.5.0 <0.6.0
+250 verbose addNamed ">=0.5.0 <0.6.0" is a valid semver range for react-overlays
+251 silly addNameRange { name: 'react-overlays',
+251 silly addNameRange   range: '>=0.5.0 <0.6.0',
+251 silly addNameRange   hasData: false }
+252 silly mapToRegistry name react-overlays
+253 silly mapToRegistry using default registry
+254 silly mapToRegistry registry https://registry.npmjs.org/
+255 silly mapToRegistry uri https://registry.npmjs.org/react-overlays
+256 verbose addNameRange registry:https://registry.npmjs.org/react-overlays not in flight; fetching
+257 verbose get https://registry.npmjs.org/react-overlays not expired, no request
+258 silly addNameRange number 2 { name: 'react-overlays',
+258 silly addNameRange   range: '>=0.5.0 <0.6.0',
+258 silly addNameRange   hasData: true }
+259 silly addNameRange versions [ 'react-overlays',
+259 silly addNameRange   [ '0.3.0',
+259 silly addNameRange     '0.4.1',
+259 silly addNameRange     '0.4.2',
+259 silly addNameRange     '0.50.0-alpha1',
+259 silly addNameRange     '0.4.3',
+259 silly addNameRange     '0.4.4',
+259 silly addNameRange     '0.50.0-alpha2',
+259 silly addNameRange     '0.50.0-alpha3',
+259 silly addNameRange     '0.50.0-alpha4',
+259 silly addNameRange     '0.5.0' ] ]
+260 silly addNamed react-overlays@0.5.0
+261 verbose addNamed "0.5.0" is a plain semver version for react-overlays
+262 silly cache afterAdd react-overlays@0.5.0
+263 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\react-overlays\0.5.0\package\package.json not in flight; writing
+264 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\react-overlays\0.5.0\package\package.json written
+265 http 304 https://registry.npmjs.org/keycode
+266 silly get cb [ 304,
+266 silly get   { date: 'Fri, 30 Oct 2015 11:55:00 GMT',
+266 silly get     via: '1.1 varnish',
+266 silly get     'cache-control': 'max-age=60',
+266 silly get     etag: '"4357EE4E3925BTGCKGF330SRA"',
+266 silly get     age: '0',
+266 silly get     connection: 'keep-alive',
+266 silly get     'x-served-by': 'cache-ams4131-AMS',
+266 silly get     'x-cache': 'HIT',
+266 silly get     'x-cache-hits': '1',
+266 silly get     'x-timer': 'S1446206100.622239,VS0,VE379',
+266 silly get     vary: 'Accept' } ]
+267 verbose etag https://registry.npmjs.org/keycode from cache
+268 verbose get saving keycode to C:\Users\Giti\AppData\Roaming\npm-cache\registry.npmjs.org\keycode\.cache.json
+269 silly resolveWithNewModule keycode@2.1.0 checking installable status
+270 silly cache add args [ 'keycode@^2.1.0', null ]
+271 verbose cache add spec keycode@^2.1.0
+272 silly cache add parsed spec Result {
+272 silly cache add   raw: 'keycode@^2.1.0',
+272 silly cache add   scope: null,
+272 silly cache add   name: 'keycode',
+272 silly cache add   rawSpec: '^2.1.0',
+272 silly cache add   spec: '>=2.1.0 <3.0.0',
+272 silly cache add   type: 'range' }
+273 silly addNamed keycode@>=2.1.0 <3.0.0
+274 verbose addNamed ">=2.1.0 <3.0.0" is a valid semver range for keycode
+275 silly addNameRange { name: 'keycode', range: '>=2.1.0 <3.0.0', hasData: false }
+276 silly mapToRegistry name keycode
+277 silly mapToRegistry using default registry
+278 silly mapToRegistry registry https://registry.npmjs.org/
+279 silly mapToRegistry uri https://registry.npmjs.org/keycode
+280 verbose addNameRange registry:https://registry.npmjs.org/keycode not in flight; fetching
+281 verbose get https://registry.npmjs.org/keycode not expired, no request
+282 silly addNameRange number 2 { name: 'keycode', range: '>=2.1.0 <3.0.0', hasData: true }
+283 silly addNameRange versions [ 'keycode',
+283 silly addNameRange   [ '0.2.2', '0.2.3', '0.3.0', '1.0.0', '1.0.1', '2.0.0', '2.1.0' ] ]
+284 silly addNamed keycode@2.1.0
+285 verbose addNamed "2.1.0" is a plain semver version for keycode
+286 silly cache afterAdd keycode@2.1.0
+287 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\keycode\2.1.0\package\package.json not in flight; writing
+288 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\keycode\2.1.0\package\package.json written
+289 http 304 https://registry.npmjs.org/uncontrollable
+290 silly get cb [ 304,
+290 silly get   { date: 'Fri, 30 Oct 2015 11:55:00 GMT',
+290 silly get     via: '1.1 varnish',
+290 silly get     'cache-control': 'max-age=60',
+290 silly get     etag: '"DY3X16G0IQTRN1YDB03NXFUUG"',
+290 silly get     age: '0',
+290 silly get     connection: 'keep-alive',
+290 silly get     'x-served-by': 'cache-ams4125-AMS',
+290 silly get     'x-cache': 'HIT',
+290 silly get     'x-cache-hits': '1',
+290 silly get     'x-timer': 'S1446206100.692824,VS0,VE387',
+290 silly get     vary: 'Accept' } ]
+291 verbose etag https://registry.npmjs.org/uncontrollable from cache
+292 verbose get saving uncontrollable to C:\Users\Giti\AppData\Roaming\npm-cache\registry.npmjs.org\uncontrollable\.cache.json
+293 silly resolveWithNewModule uncontrollable@3.1.3 checking installable status
+294 silly cache add args [ 'uncontrollable@^3.1.3', null ]
+295 verbose cache add spec uncontrollable@^3.1.3
+296 silly cache add parsed spec Result {
+296 silly cache add   raw: 'uncontrollable@^3.1.3',
+296 silly cache add   scope: null,
+296 silly cache add   name: 'uncontrollable',
+296 silly cache add   rawSpec: '^3.1.3',
+296 silly cache add   spec: '>=3.1.3 <4.0.0',
+296 silly cache add   type: 'range' }
+297 silly addNamed uncontrollable@>=3.1.3 <4.0.0
+298 verbose addNamed ">=3.1.3 <4.0.0" is a valid semver range for uncontrollable
+299 silly addNameRange { name: 'uncontrollable',
+299 silly addNameRange   range: '>=3.1.3 <4.0.0',
+299 silly addNameRange   hasData: false }
+300 silly mapToRegistry name uncontrollable
+301 silly mapToRegistry using default registry
+302 silly mapToRegistry registry https://registry.npmjs.org/
+303 silly mapToRegistry uri https://registry.npmjs.org/uncontrollable
+304 verbose addNameRange registry:https://registry.npmjs.org/uncontrollable not in flight; fetching
+305 verbose get https://registry.npmjs.org/uncontrollable not expired, no request
+306 silly addNameRange number 2 { name: 'uncontrollable',
+306 silly addNameRange   range: '>=3.1.3 <4.0.0',
+306 silly addNameRange   hasData: true }
+307 silly addNameRange versions [ 'uncontrollable',
+307 silly addNameRange   [ '1.0.0',
+307 silly addNameRange     '1.1.0',
+307 silly addNameRange     '1.1.1',
+307 silly addNameRange     '1.1.2',
+307 silly addNameRange     '1.1.3',
+307 silly addNameRange     '1.1.4',
+307 silly addNameRange     '1.2.0',
+307 silly addNameRange     '1.3.0',
+307 silly addNameRange     '1.3.1',
+307 silly addNameRange     '1.3.2',
+307 silly addNameRange     '1.4.0',
+307 silly addNameRange     '2.0.0',
+307 silly addNameRange     '3.0.0',
+307 silly addNameRange     '3.0.1',
+307 silly addNameRange     '3.0.2',
+307 silly addNameRange     '3.1.0',
+307 silly addNameRange     '3.0.3',
+307 silly addNameRange     '3.1.1',
+307 silly addNameRange     '3.1.2',
+307 silly addNameRange     '3.1.3' ] ]
+308 silly addNamed uncontrollable@3.1.3
+309 verbose addNamed "3.1.3" is a plain semver version for uncontrollable
+310 silly cache afterAdd uncontrollable@3.1.3
+311 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\uncontrollable\3.1.3\package\package.json not in flight; writing
+312 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\uncontrollable\3.1.3\package\package.json written
+313 http 304 https://registry.npmjs.org/warning
+314 silly get cb [ 304,
+314 silly get   { date: 'Fri, 30 Oct 2015 11:55:01 GMT',
+314 silly get     via: '1.1 varnish',
+314 silly get     'cache-control': 'max-age=60',
+314 silly get     etag: '"A5SV89XDCSL7PDKCUJ931BHQL"',
+314 silly get     age: '31',
+314 silly get     connection: 'keep-alive',
+314 silly get     'x-served-by': 'cache-ams4124-AMS',
+314 silly get     'x-cache': 'HIT',
+314 silly get     'x-cache-hits': '1',
+314 silly get     'x-timer': 'S1446206101.093620,VS0,VE0',
+314 silly get     vary: 'Accept' } ]
+315 verbose etag https://registry.npmjs.org/warning from cache
+316 verbose get saving warning to C:\Users\Giti\AppData\Roaming\npm-cache\registry.npmjs.org\warning\.cache.json
+317 silly resolveWithNewModule warning@2.1.0 checking installable status
+318 silly cache add args [ 'warning@^2.1.0', null ]
+319 verbose cache add spec warning@^2.1.0
+320 silly cache add parsed spec Result {
+320 silly cache add   raw: 'warning@^2.1.0',
+320 silly cache add   scope: null,
+320 silly cache add   name: 'warning',
+320 silly cache add   rawSpec: '^2.1.0',
+320 silly cache add   spec: '>=2.1.0 <3.0.0',
+320 silly cache add   type: 'range' }
+321 silly addNamed warning@>=2.1.0 <3.0.0
+322 verbose addNamed ">=2.1.0 <3.0.0" is a valid semver range for warning
+323 silly addNameRange { name: 'warning', range: '>=2.1.0 <3.0.0', hasData: false }
+324 silly mapToRegistry name warning
+325 silly mapToRegistry using default registry
+326 silly mapToRegistry registry https://registry.npmjs.org/
+327 silly mapToRegistry uri https://registry.npmjs.org/warning
+328 verbose addNameRange registry:https://registry.npmjs.org/warning not in flight; fetching
+329 verbose get https://registry.npmjs.org/warning not expired, no request
+330 silly addNameRange number 2 { name: 'warning', range: '>=2.1.0 <3.0.0', hasData: true }
+331 silly addNameRange versions [ 'warning', [ '1.0.0', '1.0.1', '1.0.2', '2.0.0', '2.1.0' ] ]
+332 silly addNamed warning@2.1.0
+333 verbose addNamed "2.1.0" is a plain semver version for warning
+334 silly cache afterAdd warning@2.1.0
+335 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\warning\2.1.0\package\package.json not in flight; writing
+336 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\warning\2.1.0\package\package.json written
+337 http 304 https://registry.npmjs.org/react-prop-types
+338 silly get cb [ 304,
+338 silly get   { date: 'Fri, 30 Oct 2015 11:55:00 GMT',
+338 silly get     via: '1.1 varnish',
+338 silly get     'cache-control': 'max-age=60',
+338 silly get     etag: '"DO4KQ10NZZY78VX9DXXH0REBK"',
+338 silly get     age: '0',
+338 silly get     connection: 'keep-alive',
+338 silly get     'x-served-by': 'cache-ams4126-AMS',
+338 silly get     'x-cache': 'HIT',
+338 silly get     'x-cache-hits': '1',
+338 silly get     'x-timer': 'S1446206100.981919,VS0,VE168',
+338 silly get     vary: 'Accept' } ]
+339 verbose etag https://registry.npmjs.org/react-prop-types from cache
+340 verbose get saving react-prop-types to C:\Users\Giti\AppData\Roaming\npm-cache\registry.npmjs.org\react-prop-types\.cache.json
+341 silly resolveWithNewModule react-prop-types@0.3.0 checking installable status
+342 silly cache add args [ 'react-prop-types@^0.3.0', null ]
+343 verbose cache add spec react-prop-types@^0.3.0
+344 silly cache add parsed spec Result {
+344 silly cache add   raw: 'react-prop-types@^0.3.0',
+344 silly cache add   scope: null,
+344 silly cache add   name: 'react-prop-types',
+344 silly cache add   rawSpec: '^0.3.0',
+344 silly cache add   spec: '>=0.3.0 <0.4.0',
+344 silly cache add   type: 'range' }
+345 silly addNamed react-prop-types@>=0.3.0 <0.4.0
+346 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for react-prop-types
+347 silly addNameRange { name: 'react-prop-types',
+347 silly addNameRange   range: '>=0.3.0 <0.4.0',
+347 silly addNameRange   hasData: false }
+348 silly mapToRegistry name react-prop-types
+349 silly mapToRegistry using default registry
+350 silly mapToRegistry registry https://registry.npmjs.org/
+351 silly mapToRegistry uri https://registry.npmjs.org/react-prop-types
+352 verbose addNameRange registry:https://registry.npmjs.org/react-prop-types not in flight; fetching
+353 verbose get https://registry.npmjs.org/react-prop-types not expired, no request
+354 silly addNameRange number 2 { name: 'react-prop-types',
+354 silly addNameRange   range: '>=0.3.0 <0.4.0',
+354 silly addNameRange   hasData: true }
+355 silly addNameRange versions [ 'react-prop-types',
+355 silly addNameRange   [ '0.0.0', '0.2.0', '0.2.1', '0.2.2', '0.3.0' ] ]
+356 silly addNamed react-prop-types@0.3.0
+357 verbose addNamed "0.3.0" is a plain semver version for react-prop-types
+358 silly cache afterAdd react-prop-types@0.3.0
+359 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\react-prop-types\0.3.0\package\package.json not in flight; writing
+360 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\react-prop-types\0.3.0\package\package.json written
+361 silly fetchNamedPackageData core-js
+362 silly mapToRegistry name core-js
+363 silly mapToRegistry using default registry
+364 silly mapToRegistry registry https://registry.npmjs.org/
+365 silly mapToRegistry uri https://registry.npmjs.org/core-js
+366 verbose request uri https://registry.npmjs.org/core-js
+367 verbose request no auth needed
+368 info attempt registry request try #1 at 3:24:55 PM
+369 verbose etag "EBX0IQ2AD3613Q3FUR8OCPMNY"
+370 http request GET https://registry.npmjs.org/core-js
+371 http 304 https://registry.npmjs.org/core-js
+372 silly get cb [ 304,
+372 silly get   { date: 'Fri, 30 Oct 2015 11:55:02 GMT',
+372 silly get     via: '1.1 varnish',
+372 silly get     'cache-control': 'max-age=60',
+372 silly get     etag: '"EBX0IQ2AD3613Q3FUR8OCPMNY"',
+372 silly get     age: '27',
+372 silly get     connection: 'keep-alive',
+372 silly get     'x-served-by': 'cache-ams4131-AMS',
+372 silly get     'x-cache': 'HIT',
+372 silly get     'x-cache-hits': '1',
+372 silly get     'x-timer': 'S1446206102.544566,VS0,VE0',
+372 silly get     vary: 'Accept' } ]
+373 verbose etag https://registry.npmjs.org/core-js from cache
+374 verbose get saving core-js to C:\Users\Giti\AppData\Roaming\npm-cache\registry.npmjs.org\core-js\.cache.json
+375 silly resolveWithNewModule core-js@1.2.3 checking installable status
+376 silly cache add args [ 'core-js@^1.0.0', null ]
+377 verbose cache add spec core-js@^1.0.0
+378 silly cache add parsed spec Result {
+378 silly cache add   raw: 'core-js@^1.0.0',
+378 silly cache add   scope: null,
+378 silly cache add   name: 'core-js',
+378 silly cache add   rawSpec: '^1.0.0',
+378 silly cache add   spec: '>=1.0.0 <2.0.0',
+378 silly cache add   type: 'range' }
+379 silly addNamed core-js@>=1.0.0 <2.0.0
+380 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for core-js
+381 silly addNameRange { name: 'core-js', range: '>=1.0.0 <2.0.0', hasData: false }
+382 silly mapToRegistry name core-js
+383 silly mapToRegistry using default registry
+384 silly mapToRegistry registry https://registry.npmjs.org/
+385 silly mapToRegistry uri https://registry.npmjs.org/core-js
+386 verbose addNameRange registry:https://registry.npmjs.org/core-js not in flight; fetching
+387 verbose get https://registry.npmjs.org/core-js not expired, no request
+388 silly addNameRange number 2 { name: 'core-js', range: '>=1.0.0 <2.0.0', hasData: true }
+389 silly addNameRange versions [ 'core-js',
+389 silly addNameRange   [ '0.0.3',
+389 silly addNameRange     '0.0.4',
+389 silly addNameRange     '0.0.5',
+389 silly addNameRange     '0.0.7',
+389 silly addNameRange     '0.0.8',
+389 silly addNameRange     '0.0.9',
+389 silly addNameRange     '0.1.1',
+389 silly addNameRange     '0.1.2',
+389 silly addNameRange     '0.1.3',
+389 silly addNameRange     '0.1.4',
+389 silly addNameRange     '0.1.5',
+389 silly addNameRange     '0.2.0',
+389 silly addNameRange     '0.2.1',
+389 silly addNameRange     '0.2.2',
+389 silly addNameRange     '0.2.3',
+389 silly addNameRange     '0.2.4',
+389 silly addNameRange     '0.2.5',
+389 silly addNameRange     '0.3.0',
+389 silly addNameRange     '0.3.1',
+389 silly addNameRange     '0.3.2',
+389 silly addNameRange     '0.3.3',
+389 silly addNameRange     '0.4.0',
+389 silly addNameRange     '0.4.1',
+389 silly addNameRange     '0.4.2',
+389 silly addNameRange     '0.4.3',
+389 silly addNameRange     '0.4.4',
+389 silly addNameRange     '0.4.5',
+389 silly addNameRange     '0.4.6',
+389 silly addNameRange     '0.4.7',
+389 silly addNameRange     '0.4.8',
+389 silly addNameRange     '0.4.9',
+389 silly addNameRange     '0.4.10',
+389 silly addNameRange     '0.5.0',
+389 silly addNameRange     '0.5.1',
+389 silly addNameRange     '0.5.2',
+389 silly addNameRange     '0.5.3',
+389 silly addNameRange     '0.5.4',
+389 silly addNameRange     '0.6.0',
+389 silly addNameRange     '0.6.1',
+389 silly addNameRange     '0.7.0',
+389 silly addNameRange     '0.7.1',
+389 silly addNameRange     '0.7.2',
+389 silly addNameRange     '0.8.0',
+389 silly addNameRange     '0.8.1',
+389 silly addNameRange     '0.8.2',
+389 silly addNameRange     '0.8.3',
+389 silly addNameRange     '0.8.4',
+389 silly addNameRange     '0.9.0',
+389 silly addNameRange     '0.9.1',
+389 silly addNameRange     '0.9.2',
+389 silly addNameRange     '0.9.3',
+389 silly addNameRange     '0.9.4',
+389 silly addNameRange     '0.9.5',
+389 silly addNameRange     '0.9.6',
+389 silly addNameRange     '0.9.7',
+389 silly addNameRange     '0.9.8',
+389 silly addNameRange     '0.9.9',
+389 silly addNameRange     '0.9.10',
+389 silly addNameRange     '0.9.11',
+389 silly addNameRange     '0.9.12',
+389 silly addNameRange     '0.9.13',
+389 silly addNameRange     '0.9.14',
+389 silly addNameRange     '0.9.15',
+389 silly addNameRange     '0.9.16',
+389 silly addNameRange     '0.9.17',
+389 silly addNameRange     '0.9.18',
+389 silly addNameRange     '1.0.0',
+389 silly addNameRange     '1.0.1',
+389 silly addNameRange     '1.1.0',
+389 silly addNameRange     '1.1.1',
+389 silly addNameRange     '1.1.2',
+389 silly addNameRange     '1.1.3',
+389 silly addNameRange     '1.1.4',
+389 silly addNameRange     '1.2.0',
+389 silly addNameRange     '1.2.1',
+389 silly addNameRange     '1.2.2',
+389 silly addNameRange     '1.2.3' ] ]
+390 silly addNamed core-js@1.2.3
+391 verbose addNamed "1.2.3" is a plain semver version for core-js
+392 silly cache afterAdd core-js@1.2.3
+393 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\core-js\1.2.3\package\package.json not in flight; writing
+394 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\core-js\1.2.3\package\package.json written
+395 silly fetchNamedPackageData react-prop-types
+396 silly mapToRegistry name react-prop-types
+397 silly mapToRegistry using default registry
+398 silly mapToRegistry registry https://registry.npmjs.org/
+399 silly mapToRegistry uri https://registry.npmjs.org/react-prop-types
+400 silly resolveWithNewModule react-prop-types@0.2.2 checking installable status
+401 silly cache add args [ 'react-prop-types@^0.2.1', null ]
+402 verbose cache add spec react-prop-types@^0.2.1
+403 silly cache add parsed spec Result {
+403 silly cache add   raw: 'react-prop-types@^0.2.1',
+403 silly cache add   scope: null,
+403 silly cache add   name: 'react-prop-types',
+403 silly cache add   rawSpec: '^0.2.1',
+403 silly cache add   spec: '>=0.2.1 <0.3.0',
+403 silly cache add   type: 'range' }
+404 silly addNamed react-prop-types@>=0.2.1 <0.3.0
+405 verbose addNamed ">=0.2.1 <0.3.0" is a valid semver range for react-prop-types
+406 silly addNameRange { name: 'react-prop-types',
+406 silly addNameRange   range: '>=0.2.1 <0.3.0',
+406 silly addNameRange   hasData: false }
+407 silly mapToRegistry name react-prop-types
+408 silly mapToRegistry using default registry
+409 silly mapToRegistry registry https://registry.npmjs.org/
+410 silly mapToRegistry uri https://registry.npmjs.org/react-prop-types
+411 verbose addNameRange registry:https://registry.npmjs.org/react-prop-types not in flight; fetching
+412 verbose get https://registry.npmjs.org/react-prop-types not expired, no request
+413 silly addNameRange number 2 { name: 'react-prop-types',
+413 silly addNameRange   range: '>=0.2.1 <0.3.0',
+413 silly addNameRange   hasData: true }
+414 silly addNameRange versions [ 'react-prop-types',
+414 silly addNameRange   [ '0.0.0', '0.2.0', '0.2.1', '0.2.2', '0.3.0' ] ]
+415 silly addNamed react-prop-types@0.2.2
+416 verbose addNamed "0.2.2" is a plain semver version for react-prop-types
+417 silly cache afterAdd react-prop-types@0.2.2
+418 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\react-prop-types\0.2.2\package\package.json not in flight; writing
+419 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\react-prop-types\0.2.2\package\package.json written
+420 silly fetchNamedPackageData loose-envify
+421 silly mapToRegistry name loose-envify
+422 silly mapToRegistry using default registry
+423 silly mapToRegistry registry https://registry.npmjs.org/
+424 silly mapToRegistry uri https://registry.npmjs.org/loose-envify
+425 verbose request uri https://registry.npmjs.org/loose-envify
+426 verbose request no auth needed
+427 info attempt registry request try #1 at 3:24:56 PM
+428 verbose etag "2L56VY41TJJXRF6O0PIETR3YS"
+429 http request GET https://registry.npmjs.org/loose-envify
+430 http 304 https://registry.npmjs.org/loose-envify
+431 silly get cb [ 304,
+431 silly get   { date: 'Fri, 30 Oct 2015 11:55:03 GMT',
+431 silly get     via: '1.1 varnish',
+431 silly get     'cache-control': 'max-age=60',
+431 silly get     etag: '"2L56VY41TJJXRF6O0PIETR3YS"',
+431 silly get     age: '0',
+431 silly get     connection: 'keep-alive',
+431 silly get     'x-served-by': 'cache-ams4136-AMS',
+431 silly get     'x-cache': 'HIT',
+431 silly get     'x-cache-hits': '1',
+431 silly get     'x-timer': 'S1446206103.965278,VS0,VE96',
+431 silly get     vary: 'Accept' } ]
+432 verbose etag https://registry.npmjs.org/loose-envify from cache
+433 verbose get saving loose-envify to C:\Users\Giti\AppData\Roaming\npm-cache\registry.npmjs.org\loose-envify\.cache.json
+434 silly resolveWithNewModule loose-envify@1.1.0 checking installable status
+435 silly cache add args [ 'loose-envify@^1.0.0', null ]
+436 verbose cache add spec loose-envify@^1.0.0
+437 silly cache add parsed spec Result {
+437 silly cache add   raw: 'loose-envify@^1.0.0',
+437 silly cache add   scope: null,
+437 silly cache add   name: 'loose-envify',
+437 silly cache add   rawSpec: '^1.0.0',
+437 silly cache add   spec: '>=1.0.0 <2.0.0',
+437 silly cache add   type: 'range' }
+438 silly addNamed loose-envify@>=1.0.0 <2.0.0
+439 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for loose-envify
+440 silly addNameRange { name: 'loose-envify', range: '>=1.0.0 <2.0.0', hasData: false }
+441 silly mapToRegistry name loose-envify
+442 silly mapToRegistry using default registry
+443 silly mapToRegistry registry https://registry.npmjs.org/
+444 silly mapToRegistry uri https://registry.npmjs.org/loose-envify
+445 verbose addNameRange registry:https://registry.npmjs.org/loose-envify not in flight; fetching
+446 verbose get https://registry.npmjs.org/loose-envify not expired, no request
+447 silly addNameRange number 2 { name: 'loose-envify', range: '>=1.0.0 <2.0.0', hasData: true }
+448 silly addNameRange versions [ 'loose-envify', [ '1.0.0', '1.1.0' ] ]
+449 silly addNamed loose-envify@1.1.0
+450 verbose addNamed "1.1.0" is a plain semver version for loose-envify
+451 silly cache afterAdd loose-envify@1.1.0
+452 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\loose-envify\1.1.0\package\package.json not in flight; writing
+453 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\loose-envify\1.1.0\package\package.json written
+454 silly fetchNamedPackageData js-tokens
+455 silly mapToRegistry name js-tokens
+456 silly mapToRegistry using default registry
+457 silly mapToRegistry registry https://registry.npmjs.org/
+458 silly mapToRegistry uri https://registry.npmjs.org/js-tokens
+459 verbose request uri https://registry.npmjs.org/js-tokens
+460 verbose request no auth needed
+461 info attempt registry request try #1 at 3:24:58 PM
+462 verbose etag "F4N7TBLBJ8Z40VG7DPO546R7U"
+463 http request GET https://registry.npmjs.org/js-tokens
+464 http 304 https://registry.npmjs.org/js-tokens
+465 silly get cb [ 304,
+465 silly get   { date: 'Fri, 30 Oct 2015 11:55:05 GMT',
+465 silly get     via: '1.1 varnish',
+465 silly get     'cache-control': 'max-age=60',
+465 silly get     etag: '"F4N7TBLBJ8Z40VG7DPO546R7U"',
+465 silly get     age: '24',
+465 silly get     connection: 'keep-alive',
+465 silly get     'x-served-by': 'cache-ams4126-AMS',
+465 silly get     'x-cache': 'HIT',
+465 silly get     'x-cache-hits': '1',
+465 silly get     'x-timer': 'S1446206105.189183,VS0,VE0',
+465 silly get     vary: 'Accept' } ]
+466 verbose etag https://registry.npmjs.org/js-tokens from cache
+467 verbose get saving js-tokens to C:\Users\Giti\AppData\Roaming\npm-cache\registry.npmjs.org\js-tokens\.cache.json
+468 silly resolveWithNewModule js-tokens@1.0.2 checking installable status
+469 silly cache add args [ 'js-tokens@^1.0.1', null ]
+470 verbose cache add spec js-tokens@^1.0.1
+471 silly cache add parsed spec Result {
+471 silly cache add   raw: 'js-tokens@^1.0.1',
+471 silly cache add   scope: null,
+471 silly cache add   name: 'js-tokens',
+471 silly cache add   rawSpec: '^1.0.1',
+471 silly cache add   spec: '>=1.0.1 <2.0.0',
+471 silly cache add   type: 'range' }
+472 silly addNamed js-tokens@>=1.0.1 <2.0.0
+473 verbose addNamed ">=1.0.1 <2.0.0" is a valid semver range for js-tokens
+474 silly addNameRange { name: 'js-tokens', range: '>=1.0.1 <2.0.0', hasData: false }
+475 silly mapToRegistry name js-tokens
+476 silly mapToRegistry using default registry
+477 silly mapToRegistry registry https://registry.npmjs.org/
+478 silly mapToRegistry uri https://registry.npmjs.org/js-tokens
+479 verbose addNameRange registry:https://registry.npmjs.org/js-tokens not in flight; fetching
+480 verbose get https://registry.npmjs.org/js-tokens not expired, no request
+481 silly addNameRange number 2 { name: 'js-tokens', range: '>=1.0.1 <2.0.0', hasData: true }
+482 silly addNameRange versions [ 'js-tokens',
+482 silly addNameRange   [ '0.1.0',
+482 silly addNameRange     '0.2.0',
+482 silly addNameRange     '0.3.0',
+482 silly addNameRange     '0.3.1',
+482 silly addNameRange     '0.4.0',
+482 silly addNameRange     '0.4.1',
+482 silly addNameRange     '1.0.0',
+482 silly addNameRange     '1.0.1',
+482 silly addNameRange     '1.0.2' ] ]
+483 silly addNamed js-tokens@1.0.2
+484 verbose addNamed "1.0.2" is a plain semver version for js-tokens
+485 silly cache afterAdd js-tokens@1.0.2
+486 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\js-tokens\1.0.2\package\package.json not in flight; writing
+487 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\js-tokens\1.0.2\package\package.json written
+488 silly fetchNamedPackageData invariant
+489 silly mapToRegistry name invariant
+490 silly mapToRegistry using default registry
+491 silly mapToRegistry registry https://registry.npmjs.org/
+492 silly mapToRegistry uri https://registry.npmjs.org/invariant
+493 verbose request uri https://registry.npmjs.org/invariant
+494 verbose request no auth needed
+495 info attempt registry request try #1 at 3:24:59 PM
+496 verbose etag "8LIZFO5SDJWMW64GRZD0YHQW8"
+497 http request GET https://registry.npmjs.org/invariant
+498 http 304 https://registry.npmjs.org/invariant
+499 silly get cb [ 304,
+499 silly get   { date: 'Fri, 30 Oct 2015 11:55:06 GMT',
+499 silly get     via: '1.1 varnish',
+499 silly get     'cache-control': 'max-age=60',
+499 silly get     etag: '"8LIZFO5SDJWMW64GRZD0YHQW8"',
+499 silly get     age: '36',
+499 silly get     connection: 'keep-alive',
+499 silly get     'x-served-by': 'cache-ams4139-AMS',
+499 silly get     'x-cache': 'HIT',
+499 silly get     'x-cache-hits': '1',
+499 silly get     'x-timer': 'S1446206106.481971,VS0,VE0',
+499 silly get     vary: 'Accept' } ]
+500 verbose etag https://registry.npmjs.org/invariant from cache
+501 verbose get saving invariant to C:\Users\Giti\AppData\Roaming\npm-cache\registry.npmjs.org\invariant\.cache.json
+502 silly resolveWithNewModule invariant@2.1.2 checking installable status
+503 silly cache add args [ 'invariant@^2.1.0', null ]
+504 verbose cache add spec invariant@^2.1.0
+505 silly cache add parsed spec Result {
+505 silly cache add   raw: 'invariant@^2.1.0',
+505 silly cache add   scope: null,
+505 silly cache add   name: 'invariant',
+505 silly cache add   rawSpec: '^2.1.0',
+505 silly cache add   spec: '>=2.1.0 <3.0.0',
+505 silly cache add   type: 'range' }
+506 silly addNamed invariant@>=2.1.0 <3.0.0
+507 verbose addNamed ">=2.1.0 <3.0.0" is a valid semver range for invariant
+508 silly addNameRange { name: 'invariant', range: '>=2.1.0 <3.0.0', hasData: false }
+509 silly mapToRegistry name invariant
+510 silly mapToRegistry using default registry
+511 silly mapToRegistry registry https://registry.npmjs.org/
+512 silly mapToRegistry uri https://registry.npmjs.org/invariant
+513 verbose addNameRange registry:https://registry.npmjs.org/invariant not in flight; fetching
+514 verbose get https://registry.npmjs.org/invariant not expired, no request
+515 silly addNameRange number 2 { name: 'invariant', range: '>=2.1.0 <3.0.0', hasData: true }
+516 silly addNameRange versions [ 'invariant',
+516 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '2.0.0', '2.1.0', '2.1.1', '2.1.2' ] ]
+517 silly addNamed invariant@2.1.2
+518 verbose addNamed "2.1.2" is a plain semver version for invariant
+519 silly cache afterAdd invariant@2.1.2
+520 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\invariant\2.1.2\package\package.json not in flight; writing
+521 verbose afterAdd C:\Users\Giti\AppData\Roaming\npm-cache\invariant\2.1.2\package\package.json written
+522 silly loadAllDepsIntoIdealTree Finishing
+523 silly idealTree:prePrune F:\Documents\MyProjects\React Language Selector
+523 silly idealTree:prePrune ├── amdefine@1.0.0
+523 silly idealTree:prePrune ├── babel-runtime@5.8.29
+523 silly idealTree:prePrune ├── base62@0.1.1
+523 silly idealTree:prePrune ├── classnames@2.2.0
+523 silly idealTree:prePrune ├── core-js@1.2.3
+523 silly idealTree:prePrune ├── core-util-is@1.0.1
+523 silly idealTree:prePrune ├── dom-helpers@2.4.0
+523 silly idealTree:prePrune ├─┬ dom-serializer@0.1.0
+523 silly idealTree:prePrune │ ├── domelementtype@1.1.3
+523 silly idealTree:prePrune │ └── entities@1.1.1
+523 silly idealTree:prePrune ├── domelementtype@1.3.0
+523 silly idealTree:prePrune ├── domhandler@2.3.0
+523 silly idealTree:prePrune ├── domutils@1.5.1
+523 silly idealTree:prePrune ├── entities@1.0.0
+523 silly idealTree:prePrune ├── envify@3.4.0
+523 silly idealTree:prePrune ├── esprima-fb@13001.1001.0-dev-harmony-fb
+523 silly idealTree:prePrune ├── eval@0.1.1
+523 silly idealTree:prePrune ├── html-to-react@0.1.1
+523 silly idealTree:prePrune ├── htmlparser2@3.8.3
+523 silly idealTree:prePrune ├── inherits@2.0.1
+523 silly idealTree:prePrune ├── invariant@2.1.2
+523 silly idealTree:prePrune ├── isarray@0.0.1
+523 silly idealTree:prePrune ├── js-tokens@1.0.2
+523 silly idealTree:prePrune ├── jstransform@10.1.0
+523 silly idealTree:prePrune ├── keycode@2.1.0
+523 silly idealTree:prePrune ├── lodash@3.10.1
+523 silly idealTree:prePrune ├── lodash-compat@3.10.1
+523 silly idealTree:prePrune ├── loose-envify@1.1.0
+523 silly idealTree:prePrune ├── F:\Documents\MyProjects\React Language Selector\node_modules\npm-debug.log
+523 silly idealTree:prePrune ├── react@0.13.3
+523 silly idealTree:prePrune ├── react-bootstrap@0.27.3
+523 silly idealTree:prePrune ├── react-dom@0.1.0
+523 silly idealTree:prePrune ├── react-htmlparser2@0.1.0
+523 silly idealTree:prePrune ├─┬ react-overlays@0.5.0
+523 silly idealTree:prePrune │ └── react-prop-types@0.2.2
+523 silly idealTree:prePrune ├── react-prop-types@0.3.0
+523 silly idealTree:prePrune ├── react-to-html-webpack-plugin@2.2.0
+523 silly idealTree:prePrune ├── readable-stream@1.1.13
+523 silly idealTree:prePrune ├── require-like@0.1.2
+523 silly idealTree:prePrune ├── source-map@0.1.31
+523 silly idealTree:prePrune ├── string_decoder@0.10.31
+523 silly idealTree:prePrune ├── through@2.3.8
+523 silly idealTree:prePrune ├── uncontrollable@3.1.3
+523 silly idealTree:prePrune └── warning@2.1.0
+524 silly loadIdealTree Finishing
+525 silly currentTree F:\Documents\MyProjects\React Language Selector
+525 silly currentTree ├── amdefine@1.0.0
+525 silly currentTree ├── base62@0.1.1
+525 silly currentTree ├── core-util-is@1.0.1
+525 silly currentTree ├─┬ dom-serializer@0.1.0
+525 silly currentTree │ ├── domelementtype@1.1.3
+525 silly currentTree │ └── entities@1.1.1
+525 silly currentTree ├── domelementtype@1.3.0
+525 silly currentTree ├── domhandler@2.3.0
+525 silly currentTree ├── domutils@1.5.1
+525 silly currentTree ├── entities@1.0.0
+525 silly currentTree ├── envify@3.4.0
+525 silly currentTree ├── esprima-fb@13001.1001.0-dev-harmony-fb
+525 silly currentTree ├── eval@0.1.1
+525 silly currentTree ├── html-to-react@0.1.1
+525 silly currentTree ├── htmlparser2@3.8.3
+525 silly currentTree ├── inherits@2.0.1
+525 silly currentTree ├── isarray@0.0.1
+525 silly currentTree ├── jstransform@10.1.0
+525 silly currentTree ├── lodash@3.10.1
+525 silly currentTree ├── F:\Documents\MyProjects\React Language Selector\node_modules\npm-debug.log
+525 silly currentTree ├── react@0.13.3
+525 silly currentTree ├── react-dom@0.1.0
+525 silly currentTree ├── react-htmlparser2@0.1.0
+525 silly currentTree ├── react-to-html-webpack-plugin@2.2.0
+525 silly currentTree ├── readable-stream@1.1.13
+525 silly currentTree ├── require-like@0.1.2
+525 silly currentTree ├── source-map@0.1.31
+525 silly currentTree ├── string_decoder@0.10.31
+525 silly currentTree └── through@2.3.8
+526 silly idealTree F:\Documents\MyProjects\React Language Selector
+526 silly idealTree ├── amdefine@1.0.0
+526 silly idealTree ├── babel-runtime@5.8.29
+526 silly idealTree ├── base62@0.1.1
+526 silly idealTree ├── classnames@2.2.0
+526 silly idealTree ├── core-js@1.2.3
+526 silly idealTree ├── core-util-is@1.0.1
+526 silly idealTree ├── dom-helpers@2.4.0
+526 silly idealTree ├─┬ dom-serializer@0.1.0
+526 silly idealTree │ ├── domelementtype@1.1.3
+526 silly idealTree │ └── entities@1.1.1
+526 silly idealTree ├── domelementtype@1.3.0
+526 silly idealTree ├── domhandler@2.3.0
+526 silly idealTree ├── domutils@1.5.1
+526 silly idealTree ├── entities@1.0.0
+526 silly idealTree ├── envify@3.4.0
+526 silly idealTree ├── esprima-fb@13001.1001.0-dev-harmony-fb
+526 silly idealTree ├── eval@0.1.1
+526 silly idealTree ├── html-to-react@0.1.1
+526 silly idealTree ├── htmlparser2@3.8.3
+526 silly idealTree ├── inherits@2.0.1
+526 silly idealTree ├── invariant@2.1.2
+526 silly idealTree ├── isarray@0.0.1
+526 silly idealTree ├── js-tokens@1.0.2
+526 silly idealTree ├── jstransform@10.1.0
+526 silly idealTree ├── keycode@2.1.0
+526 silly idealTree ├── lodash@3.10.1
+526 silly idealTree ├── lodash-compat@3.10.1
+526 silly idealTree ├── loose-envify@1.1.0
+526 silly idealTree ├── F:\Documents\MyProjects\React Language Selector\node_modules\npm-debug.log
+526 silly idealTree ├── react@0.13.3
+526 silly idealTree ├── react-bootstrap@0.27.3
+526 silly idealTree ├── react-dom@0.1.0
+526 silly idealTree ├── react-htmlparser2@0.1.0
+526 silly idealTree ├─┬ react-overlays@0.5.0
+526 silly idealTree │ └── react-prop-types@0.2.2
+526 silly idealTree ├── react-prop-types@0.3.0
+526 silly idealTree ├── react-to-html-webpack-plugin@2.2.0
+526 silly idealTree ├── readable-stream@1.1.13
+526 silly idealTree ├── require-like@0.1.2
+526 silly idealTree ├── source-map@0.1.31
+526 silly idealTree ├── string_decoder@0.10.31
+526 silly idealTree ├── through@2.3.8
+526 silly idealTree ├── uncontrollable@3.1.3
+526 silly idealTree └── warning@2.1.0
+527 silly generateActionsToTake Starting
+528 silly install generateActionsToTake
+529 verbose stack Error: Invalid name: "React Language Selector"
+529 verbose stack     at ensureValidName (C:\Users\Giti\AppData\Roaming\npm\node_modules\npm\node_modules\normalize-package-data\lib\fixer.js:331:15)
+529 verbose stack     at Object.module.exports.fixNameField (C:\Users\Giti\AppData\Roaming\npm\node_modules\npm\node_modules\normalize-package-data\lib\fixer.js:210:5)
+529 verbose stack     at C:\Users\Giti\AppData\Roaming\npm\node_modules\npm\node_modules\normalize-package-data\lib\normalize.js:32:38
+529 verbose stack     at Array.forEach (native)
+529 verbose stack     at normalize (C:\Users\Giti\AppData\Roaming\npm\node_modules\npm\node_modules\normalize-package-data\lib\normalize.js:31:15)
+529 verbose stack     at thenCheckTop (C:\Users\Giti\AppData\Roaming\npm\node_modules\npm\lib\install\validate-tree.js:58:3)
+529 verbose stack     at Array.<anonymous> (C:\Users\Giti\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+529 verbose stack     at LOOP (C:\Users\Giti\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+529 verbose stack     at C:\Users\Giti\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\chain.js:18:7
+529 verbose stack     at thenValidateAllPeerDeps (C:\Users\Giti\AppData\Roaming\npm\node_modules\npm\lib\install\validate-tree.js:46:3)
+530 verbose cwd F:\Documents\MyProjects\React Language Selector
+531 error Windows_NT 10.0.10240
+532 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\Giti\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "react-bootstrap"
+533 error node v4.1.0
+534 error npm  v3.3.3
+535 error Invalid name: "React Language Selector"
+536 error If you need help, you may report this error at:
+536 error     <https://github.com/npm/npm/issues>
+537 verbose exit [ 1, true ]

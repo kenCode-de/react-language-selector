@@ -1,6 +1,6 @@
 [
-{"lang":"en_US","elem":"//*[@id='language']","text":"projects", "attr":{"href":"http://kencode.en/projects", "alt":"EN"}},
-{"lang":"en_US","elem":"//*[@id='language']","text":"contact", "attr":{"href":"http://kencode.en/projects", "alt":"EN"}},
-{"lang":"en_US","elem":"//*[@id='language']","text":"Fast Companies ♥ Decentralization", "attr":{"alt":"EN"}},
-{"lang":"en_US","elem":"//*[@id='language']", "attr":{"src":"img/flags/United-States.png","alt":"EN"}}
+{"lang":"en_US","elem":"//*[@id='language1']","text":"projects", "attr":{"href":"http://kencode.en/projects", "alt":"EN"}},
+{"lang":"en_US","elem":"//*[@id='language2']","text":"contact", "attr":{"href":"http://kencode.en/projects", "alt":"EN"}},
+{"lang":"en_US","elem":"//*[@id='language3']","text":"Fast Companies ♥ Decentralization", "attr":{"alt":"EN"}},
+{"lang":"en_US","elem":"//*[@id='language4']", "attr":{"src":"img/flags/United-States.png","alt":"EN"}}
 ]
