@@ -197,7 +197,7 @@ React.LS = (function () {
 			return {
 				gridColumns: 1,
 				showFlag: true,
-				openMode: 'hover',
+				openMode: 'click',
 				hoverTimeout: 200,
 				selectedLang: null,
 				onPopupOpening: null,
@@ -329,6 +329,8 @@ React.LS = (function () {
 			var liElements = [];
 
 			var getTableColumns = function () {
+				var myStyles = {};
+				myStyles.cursor = 'pointer';
 				var tableColumns = [];
 				for (var i = 0; i < itemsProp.length; i++) {
 					var item = itemsProp[i];
@@ -337,35 +339,35 @@ React.LS = (function () {
 						selectedItemClass = 'rlsui-selected-locale';
 					}
 					if (showFlagsProp) {
-						liElements.push(React.createElement("li", null,
+						liElements.push(React.createElement("li", {role: "presentation"},
 							React.createElement("a", {
 									className: selectedItemClass,
 									title: item.title,
-									onClick: _this._onLanguageSelected.bind(_this, item)
+									onClick: _this._onLanguageSelected.bind(_this, item),
+									style: myStyles,
+									role: "menuitem"
 								},
 								React.createElement("img", {src: item.flagImg, alt: item.flagTitle}), " ", item.name)
 						));
 					} else {
-						liElements.push(React.createElement("li", null,
+						liElements.push(React.createElement("li", {role: "presentation"},
 							React.createElement("a", {
 								className: selectedItemClass,
 								title: item.title,
-								onClick: _this._onLanguageSelected.bind(_this, item)
+								onClick: _this._onLanguageSelected.bind(_this, item),
+								style: myStyles,
+								role: "menuitem"
 							}, " ", item.name)
 						));
 					}
 					if (((i + 1) % langPerColumn) === 0) {
-						tableColumns.push(React.createElement("td", null,
-							React.createElement("ul", null, liElements)
-						));
+						tableColumns.push(liElements);
 						liElements = [];
 					}
 				}
 
 				if (liElements.length > 0) {
-					tableColumns.push(React.createElement("td", null,
-						React.createElement("ul", null, liElements)
-					));
+					tableColumns.push(liElements);
 					liElements = [];
 				}
 
@@ -373,21 +375,39 @@ React.LS = (function () {
 			};
 
 			var getSelectedLanguage = function () {
+				var myStyles = {};
+				myStyles.cursor = 'pointer';
 				var flagEl = '';
+				var caretEl = '';
+				caretEl = React.createElement("span", {className: 'caret'});
 				if (showFlagsProp) {
 					flagEl = React.createElement("img", {src: selectedLang.flagImg, alt: selectedLang.flagTitle});
 				}
 				if (openMode === 'hover') {
 					return React.createElement("a", {
-						className: "rlsui-selected-locale",
+						className: "rlsui-selected-locale dropdown-toggle",
 						onMouseEnter: _this._onHover.bind(_this, true),
-						onMouseLeave: _this._onHover.bind(_this, false)
-					}, flagEl, " ", selectedLang.name);
+						onMouseLeave: _this._onHover.bind(_this, false),
+						style: myStyles,
+						id: "drop_rls",
+						'data-toggle': "dropdown",
+						'data-trigger': "mouseover",
+						'aria-haspopup': "true",
+						role: "button",
+						'aria-expanded': "false"
+					}, flagEl, " ", selectedLang.name, caretEl);
 				} else {
 					return React.createElement("a", {
-						className: "rlsui-selected-locale",
-						onClick: _this._onClick
-					}, flagEl, " ", selectedLang.name);
+						className: "rlsui-selected-locale dropdown-toggle",
+						onClick: _this._onClick,
+						style: myStyles,
+						id: "drop_rls",
+						'data-toggle': "dropdown",
+						'data-trigger': "mouseover",
+						'aria-haspopup': "true",
+						role: "button",
+						'aria-expanded': "false"
+					}, flagEl, " ", selectedLang.name, caretEl);
 				}
 			};
 
@@ -397,33 +417,36 @@ React.LS = (function () {
 					popupStyles.display = 'none';
 				}
 				if (openMode === 'hover') {
-					return React.createElement("div", {
-							className: "rlsui-language-container-scrollable",
-							style: popupStyles,
+					return React.createElement("ul", {
+							className: "rlsui-language-container-scrollable dropdown-menu",
+
 							onMouseEnter: _this._onHover.bind(_this, true),
-							onMouseLeave: _this._onHover.bind(_this, false)
+							onMouseLeave: _this._onHover.bind(_this, false),
+							'aria-labelledby': "drop_rls",
+							role: "menu"
 						},
-						React.createElement("table", {className: "rlsui-language-container"},
-							React.createElement("tbody", null,
-								React.createElement("tr", null, getTableColumns())
-							)
-						)
+
+						getTableColumns()
 					);
 				} else {
-					return React.createElement("div", {
-							className: "rlsui-language-container-scrollable",
-							style: popupStyles
+					return React.createElement("ul", {
+							className: "rlsui-language-container-scrollable dropdown-menu",
+
+							'aria-labelledby': "drop_rls",
+							role: "menu"
 						},
-						React.createElement("table", {className: "rlsui-language-container"},
-							React.createElement("tbody", null,
-								React.createElement("tr", null, getTableColumns())
-							)
-						)
+
+						getTableColumns()
 					);
 				}
 			};
 
-			return React.createElement("div", {className: "react-language-selector-ui"}, getSelectedLanguage(), " ", getPopup());
+			if (popupOpened) {
+				return React.createElement("li", {className: "react-language-selector-ui dropdown open"}, getSelectedLanguage(), " ", getPopup());
+			}
+			else {
+				return React.createElement("li", {className: "react-language-selector-ui dropdown"}, getSelectedLanguage(), " ", getPopup());
+			}
 		}
 	});
 

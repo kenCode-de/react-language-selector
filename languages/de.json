@@ -1,6 +1,6 @@
 [
-{"lang":"de_DE","elem":"//*[@id='language']","text":"projekte", "attr":{"href":"http://kencode.de/projects", "alt":"DE"}},
-{"lang":"de_DE","elem":"//*[@id='language']","text":"kontakt", "attr":{"href":"http://kencode.de/projects","alt":"DE"}},
-{"lang":"de_DE","elem":"//*[@id='language']","text":"Schnelle Firmen ♥ Dezentralisierung", "attr":{"alt":"DE"}},
-{"lang":"de_DE","elem":"//*[@id='language']", "attr":{"src":"img/flags/Germany.png","alt":"DE"}}
+{"lang":"de_DE","elem":"//*[@id='language1']","text":"projekte", "attr":{"href":"http://kencode.de/projects", "alt":"DE"}},
+{"lang":"de_DE","elem":"//*[@id='language2']","text":"kontakt", "attr":{"href":"http://kencode.de/projects","alt":"DE"}},
+{"lang":"de_DE","elem":"//*[@id='language3']","text":"Schnelle Firmen ♥ Dezentralisierung", "attr":{"alt":"DE"}},
+{"lang":"de_DE","elem":"//*[@id='language4']", "attr":{"src":"img/flags/Germany.png","alt":"DE"}}
 ]
